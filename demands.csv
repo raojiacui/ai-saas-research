@@ -1,1 +1,6 @@
-用户是谁,正在做什么,遇到什么问题,现在怎么解决,原始URL,是否可能变成AI SaaS,备注
+用户是谁,正在做什么,遇到什么问题,现在怎么解决,原始URL,是否可能变成AI SaaS
+广告营销人员,想要模仿竞争对手的广告,很显然，不能直接下载并发布他们制作的广告，想要稍作修改,"在别人的优秀的广告基础上进行稍作修改，相当于二次创作，变成自己的原创广告视频,wan 2.7和kling omni o3这些模型已经可以更改视频中所有你想要的元素了",https://www.reddit.com/r/generativeAI/comments/1slhjfr/what_tool_can_i_use_to_copy_a_video_but_just/,YES，也相当于reference video to video
+内容创作者,制作自己的视频频道内容,虽然拥有非常棒的AI视频生成器，但是生成之后还不得不把这些片段拖进剪辑软件，然后花上三四个小时进行手动剪辑，调整大小，适应不同平台，还要修饰音频。问题只解决了创作部分，但剪辑部分仍然停留在过去的水平,需要一个真的能够读取原始素材并实际处理繁琐工作的工具，例如剪掉静音、放大调整画面为竖屏的工具,https://www.reddit.com/r/aivideos/comments/1qo8huo/we_have_amazing_ai_video_generators_now_so_why_is/,"maybe,剪辑本身非常复杂和灵活，有一点点难,但是如果想要做到一些基础的固定操作，还是可以实现的"
+正在研究如何创作AI视频的人,"想要在项目中使用人工智能驱动的动作捕捉工具，完美复制参考视频中人物的动作、姿势、动作和时间轴,并将其应用到另一个角色",人物动作比较难控制,找到一款能够提供高精度、流畅运动质量和灵活性的工具，以适应不同的应用场景，例如角色动画、视觉特效、3D动画、动作捕捉、内容创作,https://www.reddit.com/r/generativeAI/comments/1tfqjpk/looking_for_ai_motion_control_tools_that_copy/,maybe
+视频创作者,在打造自己的视频工作流，并且创作视频,流程比较复杂，需要跨多个平台之间来回切换，用GPT写脚本，elevenlabs配音，Midjourney出图片，artlist视频片段和音乐之间来回切换,"将多款工具都集中在一个平台上,不用麻烦的复制、粘贴、下载和重新上传文件,不用在不同界面反复跳转",https://www.reddit.com/r/creators/comments/1ptwxla/managing_multiple_ai_tools_for_video_creation_is/?utm_source=chatgpt.com,YES
+开发者,BYOK自带密钥的方式是否被接受,用户可以只需为SaaS本身付费，无需为订阅中包含的AI使用付费，这样子的方式是否能被大众接受,也许可以提供两种方式，对于没有密钥的用户进行基本的订阅制，对于拥有密钥的用户，可以进行填写自带密钥的方式，但是要做好安全,https://www.reddit.com/r/SaaS/comments/1vgdruz/would_a_byok_model_work_for_a_saas_product/?utm_source=chatgpt.com,YES
