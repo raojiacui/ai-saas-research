@@ -4,3 +4,16 @@
 正在研究如何创作AI视频的人,"想要在项目中使用人工智能驱动的动作捕捉工具，完美复制参考视频中人物的动作、姿势、动作和时间轴,并将其应用到另一个角色",人物动作比较难控制,找到一款能够提供高精度、流畅运动质量和灵活性的工具，以适应不同的应用场景，例如角色动画、视觉特效、3D动画、动作捕捉、内容创作,https://www.reddit.com/r/generativeAI/comments/1tfqjpk/looking_for_ai_motion_control_tools_that_copy/,maybe
 视频创作者,在打造自己的视频工作流，并且创作视频,流程比较复杂，需要跨多个平台之间来回切换，用GPT写脚本，elevenlabs配音，Midjourney出图片，artlist视频片段和音乐之间来回切换,"将多款工具都集中在一个平台上,不用麻烦的复制、粘贴、下载和重新上传文件,不用在不同界面反复跳转",https://www.reddit.com/r/creators/comments/1ptwxla/managing_multiple_ai_tools_for_video_creation_is/?utm_source=chatgpt.com,YES
 开发者,BYOK自带密钥的方式是否被接受,用户可以只需为SaaS本身付费，无需为订阅中包含的AI使用付费，这样子的方式是否能被大众接受,也许可以提供两种方式，对于没有密钥的用户进行基本的订阅制，对于拥有密钥的用户，可以进行填写自带密钥的方式，但是要做好安全,https://www.reddit.com/r/SaaS/comments/1vgdruz/would_a_byok_model_work_for_a_saas_product/?utm_source=chatgpt.com,YES
+,,,,,
+以下是Agent自动化找的,,,,,
+,,,,,
+视频创作者/内容制作人,用素材（片段、图片、脚本）制作视频,剪辑过程枯燥重复、缺乏创意；希望自动组合片段、自动加字幕、处理转场和节奏，并快速生成多个版本,寻找AI工具；评论区提到Pictory、Descript、VEED、aivideo、boomshare.ai,https://www.reddit.com/r/automation/comments/1pewjax/looking_for_tools_to_automate_video/,YES
+个人内容创作者/注重隐私的用户,在已有的个人视频中替换自己的脸,视频中有自己各个角度走动镜头；希望用AI生成的脸替换，而不是简单打码或黑圈；不能使用真人脸部（deepfake）,roop-unleashed、facefusion,https://www.reddit.com/r/StableDiffusion/comments/1fyi90a/how_can_i_replace_my_face_with_ai_generated/,YES
+音乐视频创作者/爱好者,制作一个多角色切换并唱同一首歌的短视频,需要免费的AI工具实现角色替换、动作模仿和口型同步,Wan Animate（但网站收费）、Akool Face Swap的视频对口型功能,https://www.reddit.com/r/StableDiffusion/comments/1q5kve2/what_free_ai_tool_is_there_that_can_help_me_swap/,YES
+同人内容创作者/动画爱好者,把参考视频中的角色替换成自己的角色,有角色的静态图；希望让角色出现在原视频的动作和场景中,复杂本地工作流：训练LoRA、裁剪片段、用Pinokip/Wan2.2/Wan2.1/FusioniX迁移人体动作、遮罩原角色、加载LoRA,https://www.reddit.com/r/StableDiffusion/comments/1s6dtcu/want_to_use_a_video_and_replace_a_character_with/,YES，也相当于reference video to video
+MacBook Pro M4 Max用户/AI视频尝试者,尝试文生视频、视频生视频、图生视频,工具太多选择困难；积分计费系统令人不安；担心本地开源模型的安装和学习成本,混合云方案：ChatGPT/Gemini写脚本、Runway/Kling/Vimerse出视频、CapCut/Descript剪辑；或本地ComfyUI+HunyuanVideo/Wan 2.1,https://www.reddit.com/r/generativeAI/comments/1r1e0by/best_tools_workflow_to_generate_ai_videos/,YES
+AI视频创作者/无脸内容生产者,用多个AI工具制作视频,工作流涉及ChatGPT写脚本、ElevenLabs配音、Midjourney出图、Artlist提供片段和音乐；四个订阅/登录/界面，大量复制粘贴下载上传,n8n自动化、VEED、Vosu AI、Luno等一站式平台,https://www.reddit.com/r/aitubers/comments/1pofmia/anyone_else_tired_of_juggling_a_bunch_of_ai_tools/,YES
+短视频/无脸内容创作者,制作无脸或短视频,工作流分散：一个工具写脚本、一个配音、图库/图片生成器出画面、CapCut剪辑；频繁切换工具很耗时,n8n/Make自动化、自建代码管线、每步人工审核,https://www.reddit.com/r/aitubers/comments/1uoijpz/would_an_allinone_ai_video_tool_actually_help_or/,YES
+使用库存/生成式AI视频工具的人,用Freepik和Artlist生成AI视频,全是网页工具很烦；每次想编辑都要下载、上传到剪辑软件、再导出,寻找桌面端方案：Wan 2GP、Higgsfield、Clapper,https://www.reddit.com/r/StableDiffusion/comments/1pkb3tf/any_good_desktop_ai_video_tools_getting_tired_of/,YES
+AI视频爱好者/AMD显卡用户,在LTX 2.3中用参考视频片段编辑/生成视频,会图生视频/文生视频，但不懂V2V工作流；尝试把image loader换成video loader后输出没有音频,editanything LoRA、bernini模型、在LTX 2.3 I2V GGUF工作流中把image loader换成video loader,https://github.com/Comfy-Org/ComfyUI/discussions/14329,YES，也相当于reference video to video
+宠物主人/普通AI视频创作者,制作自家猫做各种动作的短视频,希望用参考图片保持主体身份一致性；Google Veo只能把图片当作起始帧，不能作为持续参考,先出静态图再用图生视频；Wan Phantom+ComfyUI,https://www.reddit.com/r/StableDiffusion/comments/1lcarw8/best_ai_models_for_generating_video_from/,YES，也相当于reference image to video
