@@ -9,6 +9,9 @@
 - Ahrefs Backlink Checker
 - Reddit / Hacker News / GitHub Issues / X
 
+## 填写规范
+- [CSV 填写标准](CSV_FILLING_STANDARD.md)
+
 ## 当前状态
 
 | 工作 | 状态 | 说明 |
