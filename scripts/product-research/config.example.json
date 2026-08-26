@@ -1,0 +1,18 @@
+{
+  "limit": 2,
+  "focus": "reference-to-video",
+  "fetch_timeout_seconds": 12,
+  "llm_timeout_seconds": 30,
+  "max_retries": 1,
+  "llm_provider": "deepseek",
+  "outputs": {
+    "pending": "pending-products.csv",
+    "reports": "runs/"
+  },
+  "notes": [
+    "Do not modify products.csv from the workflow",
+    "Use llm_provider=deepseek only when DEEPSEEK_API_KEY is configured; default model is deepseek-v4-flash",
+    "pending-products.csv is the only automation result table; use status to filter pending/skipped/failed",
+    "AITDK fields are unavailable in the MVP and require manual follow-up"
+  ]
+}
