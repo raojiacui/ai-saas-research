@@ -24,6 +24,51 @@ Duplicates are reported but not appended, to avoid repeatedly cluttering the tab
 
 ## Example
 
+Auto-discover a tiny Toolify sample, dedupe against `products.csv` and `pending-products.csv`, then enrich each official homepage:
+
+```powershell
+python scripts/product-research/run.py `
+  --discover-source toolify `
+  --limit 5 `
+  --llm-provider deepseek `
+  --focus reference-to-video `
+  --discover-timeout 15 `
+  --fetch-timeout 15 `
+  --llm-timeout 30 `
+  --max-retries 1
+```
+
+When `--discover-query` is omitted, the workflow uses a built-in AI video query pool:
+
+- `reference to video ai`
+- `video to video ai`
+- `image to video ai`
+- `text to video ai`
+- `ai video generator`
+- `ai video editor`
+- `ai video ads`
+- `ai avatar video`
+- `ai lip sync video`
+- `motion transfer video ai`
+- `video style transfer ai`
+- `product to video ads ai`
+
+To override the pool, repeat `--discover-query`:
+
+```powershell
+python scripts/product-research/run.py `
+  --discover-source toolify `
+  --discover-query "ai video ads" `
+  --discover-query "image to video ai" `
+  --discover-query "ai lip sync video" `
+  --limit 5 `
+  --llm-provider deepseek `
+  --focus reference-to-video `
+  --max-retries 1
+```
+
+Manual candidates still work:
+
 ```powershell
 python scripts/product-research/run.py `
   --candidate "TopView AI|https://www.topview.ai/|https://www.topview.ai/|manual-test" `

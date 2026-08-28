@@ -11,7 +11,7 @@ from typing import Dict, List, Tuple
 from classify import classify_product, model_label
 from csv_store import append_pending, atomic_write_text, ensure_csv, read_csv, read_products
 from dedupe import build_index, normalize_domain
-from discover import Candidate, parse_candidates
+from discover import Candidate, DEFAULT_TOOLIFY_QUERIES, discover_candidates_with_diagnostics, parse_candidates
 from enrich import extract_page, fetch_url, has_playwright_cli
 from schemas import PENDING_HEADERS, PRODUCT_HEADERS, SEMANTIC_FIELDS, VIDEO_CATEGORY_FIELDS
 from validate import validate_outputs, validate_product_row
@@ -123,7 +123,21 @@ def run(args: argparse.Namespace) -> int:
     products = read_products(PRODUCTS_CSV)
     existing_index = build_index(products)
     pending_index = build_index(read_csv(PENDING_CSV))
-    candidates = parse_candidates(args.candidate)
+    candidates = parse_candidates(args.candidate or [])
+    discover_errors: List[str] = []
+    if args.discover_source:
+        try:
+            discovery = discover_candidates_with_diagnostics(
+                args.discover_source,
+                queries=args.discover_query or DEFAULT_TOOLIFY_QUERIES,
+                limit=args.limit,
+                timeout=args.discover_timeout,
+                max_retries=args.max_retries,
+            )
+            candidates.extend(discovery.candidates)
+            discover_errors.extend(discovery.diagnostics)
+        except Exception as exc:
+            discover_errors.append(str(exc)[:500])
     if args.limit:
         candidates = candidates[: args.limit]
 
@@ -185,7 +199,7 @@ def run(args: argparse.Namespace) -> int:
         validate_outputs([PENDING_CSV])
 
     finished_at = now_iso()
-    report = render_report(started_at, finished_at, candidates, created, skipped, failed, duplicates, llm_calls, args)
+    report = render_report(started_at, finished_at, candidates, created, skipped, failed, duplicates, discover_errors, llm_calls, args)
     if not args.dry_run:
         report_path = RUNS_DIR / ("product-research-%s.md" % dt.datetime.now().strftime("%Y%m%d-%H%M%S"))
         atomic_write_text(report_path, report)
@@ -194,7 +208,7 @@ def run(args: argparse.Namespace) -> int:
     return 0
 
 
-def render_report(started_at: str, finished_at: str, candidates: List[Candidate], created: List[dict], skipped: List[dict], failed: List[dict], duplicates: List[str], llm_calls: int, args: argparse.Namespace) -> str:
+def render_report(started_at: str, finished_at: str, candidates: List[Candidate], created: List[dict], skipped: List[dict], failed: List[dict], duplicates: List[str], discover_errors: List[str], llm_calls: int, args: argparse.Namespace) -> str:
     lines = [
         "# product-research run report",
         "",
@@ -205,12 +219,15 @@ def render_report(started_at: str, finished_at: str, candidates: List[Candidate]
         "- skipped: %s" % len(skipped),
         "- duplicates: %s" % len(duplicates),
         "- failed: %s" % len(failed),
+        "- discover_diagnostics: %s" % len(discover_errors),
         "- focus: %s" % args.focus,
         "- output: pending-products.csv",
         "- llm_provider: %s" % args.llm_provider,
         "- llm_model: %s" % model_label(args.llm_provider),
         "- llm_calls: %s" % llm_calls,
         "- playwright_cli_available: %s" % has_playwright_cli(),
+        "- discover_source: %s" % (",".join(args.discover_source) if args.discover_source else ""),
+        "- discover_query: %s" % "; ".join(args.discover_query or DEFAULT_TOOLIFY_QUERIES),
         "- dry_run: %s" % args.dry_run,
         "",
         "## pending",
@@ -226,6 +243,10 @@ def render_report(started_at: str, finished_at: str, candidates: List[Candidate]
     if duplicates:
         lines.extend("- " + item for item in duplicates)
     lines.append("")
+    lines.append("## discover_diagnostics")
+    if discover_errors:
+        lines.extend("- " + item for item in discover_errors)
+    lines.append("")
     lines.append("## failed")
     for row in failed:
         lines.append("- %s | %s | %s" % (row.get("产品名"), row.get("error_code"), row.get("error")))
@@ -234,10 +255,13 @@ def render_report(started_at: str, finished_at: str, candidates: List[Candidate]
 
 def parse_args(argv: List[str]) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="AI SaaS product research MVP")
-    parser.add_argument("--candidate", action="append", required=True, help="NAME|URL|SOURCE_URL|SOURCE")
+    parser.add_argument("--candidate", action="append", help="NAME|URL|SOURCE_URL|SOURCE")
+    parser.add_argument("--discover-source", action="append", choices=["toolify"], help="Discover candidates from a bounded source")
+    parser.add_argument("--discover-query", action="append", help="Repeatable search query. Defaults to a built-in AI video query pool.")
     parser.add_argument("--limit", type=int, default=0)
     parser.add_argument("--focus", choices=["reference-to-video", "ai-video", "none"], default="reference-to-video")
     parser.add_argument("--llm-provider", choices=["none", "deepseek", "openai"], default="none")
+    parser.add_argument("--discover-timeout", type=int, default=12)
     parser.add_argument("--fetch-timeout", type=int, default=12)
     parser.add_argument("--llm-timeout", type=int, default=30)
     parser.add_argument("--max-retries", type=int, default=1)
