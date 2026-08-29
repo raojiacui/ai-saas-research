@@ -1,193 +1,201 @@
-用户是谁,正在做什么,遇到什么问题,现在怎么解决,原始URL,是否可能变成AI SaaS
-广告营销人员,想要模仿竞争对手的广告,很显然，不能直接下载并发布他们制作的广告，想要稍作修改,"在别人的优秀的广告基础上进行稍作修改，相当于二次创作，变成自己的原创广告视频,wan 2.7和kling omni o3这些模型已经可以更改视频中所有你想要的元素了",https://www.reddit.com/r/generativeAI/comments/1slhjfr/what_tool_can_i_use_to_copy_a_video_but_just/,YES，也相当于reference video to video
-内容创作者,制作自己的视频频道内容,虽然拥有非常棒的AI视频生成器，但是生成之后还不得不把这些片段拖进剪辑软件，然后花上三四个小时进行手动剪辑，调整大小，适应不同平台，还要修饰音频。问题只解决了创作部分，但剪辑部分仍然停留在过去的水平,需要一个真的能够读取原始素材并实际处理繁琐工作的工具，例如剪掉静音、放大调整画面为竖屏的工具,https://www.reddit.com/r/aivideos/comments/1qo8huo/we_have_amazing_ai_video_generators_now_so_why_is/,"maybe,剪辑本身非常复杂和灵活，有一点点难,但是如果想要做到一些基础的固定操作，还是可以实现的"
-正在研究如何创作AI视频的人,"想要在项目中使用人工智能驱动的动作捕捉工具，完美复制参考视频中人物的动作、姿势、动作和时间轴,并将其应用到另一个角色",人物动作比较难控制,找到一款能够提供高精度、流畅运动质量和灵活性的工具，以适应不同的应用场景，例如角色动画、视觉特效、3D动画、动作捕捉、内容创作,https://www.reddit.com/r/generativeAI/comments/1tfqjpk/looking_for_ai_motion_control_tools_that_copy/,maybe
-视频创作者,在打造自己的视频工作流，并且创作视频,流程比较复杂，需要跨多个平台之间来回切换，用GPT写脚本，elevenlabs配音，Midjourney出图片，artlist视频片段和音乐之间来回切换,"将多款工具都集中在一个平台上,不用麻烦的复制、粘贴、下载和重新上传文件,不用在不同界面反复跳转",https://www.reddit.com/r/creators/comments/1ptwxla/managing_multiple_ai_tools_for_video_creation_is/?utm_source=chatgpt.com,YES
-开发者,BYOK自带密钥的方式是否被接受,用户可以只需为SaaS本身付费，无需为订阅中包含的AI使用付费，这样子的方式是否能被大众接受,也许可以提供两种方式，对于没有密钥的用户进行基本的订阅制，对于拥有密钥的用户，可以进行填写自带密钥的方式，但是要做好安全,https://www.reddit.com/r/SaaS/comments/1vgdruz/would_a_byok_model_work_for_a_saas_product/?utm_source=chatgpt.com,YES
-,,,,,
-以下是Agent自动化找的,,,,,
-,,,,,
-视频创作者/内容制作人,用素材（片段、图片、脚本）制作视频,剪辑过程枯燥重复、缺乏创意；希望自动组合片段、自动加字幕、处理转场和节奏，并快速生成多个版本,寻找AI工具；评论区提到Pictory、Descript、VEED、aivideo、boomshare.ai,https://www.reddit.com/r/automation/comments/1pewjax/looking_for_tools_to_automate_video/,YES
-个人内容创作者/注重隐私的用户,在已有的个人视频中替换自己的脸,视频中有自己各个角度走动镜头；希望用AI生成的脸替换，而不是简单打码或黑圈；不能使用真人脸部（deepfake）,roop-unleashed、facefusion,https://www.reddit.com/r/StableDiffusion/comments/1fyi90a/how_can_i_replace_my_face_with_ai_generated/,YES
-音乐视频创作者/爱好者,制作一个多角色切换并唱同一首歌的短视频,需要免费的AI工具实现角色替换、动作模仿和口型同步,Wan Animate（但网站收费）、Akool Face Swap的视频对口型功能,https://www.reddit.com/r/StableDiffusion/comments/1q5kve2/what_free_ai_tool_is_there_that_can_help_me_swap/,YES
-同人内容创作者/动画爱好者,把参考视频中的角色替换成自己的角色,有角色的静态图；希望让角色出现在原视频的动作和场景中,复杂本地工作流：训练LoRA、裁剪片段、用Pinokip/Wan2.2/Wan2.1/FusioniX迁移人体动作、遮罩原角色、加载LoRA,https://www.reddit.com/r/StableDiffusion/comments/1s6dtcu/want_to_use_a_video_and_replace_a_character_with/,YES，也相当于reference video to video
-MacBook Pro M4 Max用户/AI视频尝试者,尝试文生视频、视频生视频、图生视频,工具太多选择困难；积分计费系统令人不安；担心本地开源模型的安装和学习成本,混合云方案：ChatGPT/Gemini写脚本、Runway/Kling/Vimerse出视频、CapCut/Descript剪辑；或本地ComfyUI+HunyuanVideo/Wan 2.1,https://www.reddit.com/r/generativeAI/comments/1r1e0by/best_tools_workflow_to_generate_ai_videos/,YES
-AI视频创作者/无脸内容生产者,用多个AI工具制作视频,工作流涉及ChatGPT写脚本、ElevenLabs配音、Midjourney出图、Artlist提供片段和音乐；四个订阅/登录/界面，大量复制粘贴下载上传,n8n自动化、VEED、Vosu AI、Luno等一站式平台,https://www.reddit.com/r/aitubers/comments/1pofmia/anyone_else_tired_of_juggling_a_bunch_of_ai_tools/,YES
-短视频/无脸内容创作者,制作无脸或短视频,工作流分散：一个工具写脚本、一个配音、图库/图片生成器出画面、CapCut剪辑；频繁切换工具很耗时,n8n/Make自动化、自建代码管线、每步人工审核,https://www.reddit.com/r/aitubers/comments/1uoijpz/would_an_allinone_ai_video_tool_actually_help_or/,YES
-使用库存/生成式AI视频工具的人,用Freepik和Artlist生成AI视频,全是网页工具很烦；每次想编辑都要下载、上传到剪辑软件、再导出,寻找桌面端方案：Wan 2GP、Higgsfield、Clapper,https://www.reddit.com/r/StableDiffusion/comments/1pkb3tf/any_good_desktop_ai_video_tools_getting_tired_of/,YES
-AI视频爱好者/AMD显卡用户,在LTX 2.3中用参考视频片段编辑/生成视频,会图生视频/文生视频，但不懂V2V工作流；尝试把image loader换成video loader后输出没有音频,editanything LoRA、bernini模型、在LTX 2.3 I2V GGUF工作流中把image loader换成video loader,https://github.com/Comfy-Org/ComfyUI/discussions/14329,YES，也相当于reference video to video
-宠物主人/普通AI视频创作者,制作自家猫做各种动作的短视频,希望用参考图片保持主体身份一致性；Google Veo只能把图片当作起始帧，不能作为持续参考,先出静态图再用图生视频；Wan Phantom+ComfyUI,https://www.reddit.com/r/StableDiffusion/comments/1lcarw8/best_ai_models_for_generating_video_from/,YES，也相当于reference image to video
-AI 短片创作者（HN 用户 echelon）,用 Sora 2 等模型制作 5-7 分钟 AI 短片,制作一条短片的完整 shot list 需要好几天的“拍摄”和剪辑，AI 短片制作仍然极其费力,逐镜头生成片段后手动剪辑拼接,https://news.ycombinator.com/item?id=45427982,YES
-流媒体公司 AI 解决方案工程师（HN 用户 paulluuk）,用 Veo 3 做视频方案，需要同一角色跨多个视频保持一致,Veo 3 没有跨 prompt 的一致性：不能上传角色参考图，上一个视频说“老神父弯腰”、下一个视频说“老神父捡硬币”，两个镜头里神父长得完全不同；用图生视频绕路效果也很差,先生成场景起始图再图生视频，但效果差,https://news.ycombinator.com/item?id=44258213,YES
-营销/广告团队负责人（HN 用户 cornel_io）,CEO 因不满广告创意团队出活速度，25 分钟用 AI 批量生成广告片,专家团队产能慢；AI 批量产出 20 条里只有 2 条能超过人工团队最佳广告，需要大量生成+实测筛选,CEO 自己用 AI 工具批量生成并投放测试,https://news.ycombinator.com/item?id=42368604,YES
-影视 pre-vis 从业者（HN 用户 jsheard）,用生成视频做前期预演（pre-vis）,生成的片段像通用素材库，不是导演想要的精确画面；pre-vis 不需要好看但需要精确，现有工具做不到,传统 pre-vis 流程,https://news.ycombinator.com/item?id=40358041,YES
-AI 短片创作者（HN 用户 fernly）,想验证模型能否做出有连续性的多镜头内容,用同一 prompt 做两个只有微小差别的片段，怀疑模型无法给出相同角色、相同服装、相同灯光和背景的“连贯性”，这是电影人所说的 continuity,手动检查对比，无法自动化,https://news.ycombinator.com/item?id=42432914,YES
-AI 叙事视频创作者（HN 用户 rtkwe）,把多个短场景串成有情节的视频,单个场景不错，但串起来就散架：警车内部大小形状在镜头间剧烈变化，动作戏节奏拖沓，“轮子掉下来”,分镜生成后大量人工修补,https://news.ycombinator.com/item?id=44044043,YES
-AI 广告制作公司（HN 用户 jsheard 引述）,用 AI 做可口可乐圣诞广告,需要从 7 万条生成视频中筛选出几十个镜头，且可乐卡车在镜头间始终无法保持一致，模型一直扭曲 logo，最后只能手动合成修补所有可乐标志,海量抽卡筛选 + 手动合成修 logo,https://news.ycombinator.com/item?id=46231187,YES
-电商卖家（HN 用户 umich2025）,为店铺 30 个产品做 UGC 产品视频和广告片,真人 UGC 创作者每条 $50-200 且无法控制最终镜头还要等回复；广告公司 30 秒 TVC 报价 $5k-10k；AI 方案 Sora 约 $10/30 分钟、API 成本约 $50，但目前 AI 质量还达不到,用 Google Veo（月账单 $130）+ 剪辑,https://news.ycombinator.com/item?id=47508246,YES
-AI 音乐视频创作者（HN 用户 nearbuy）,让 Claude/GPT 当“导演”自动做音乐视频,LLM 导演无法真正“看”视频内容，视频模型产出的片段有伪影、缺一致性、动作不跟音乐同步，且无法精确控制生成的片段,多模型生成 + 人工剪辑筛选,https://news.ycombinator.com/item?id=48939524,YES
-AI 影视从业者（HN 用户 veunes）,用 Sora/Veo/Runway 做导演需要的精确画面,当前模型是概率生成器，只会输出“似是而非”的画面而非导演需要的特定角度、灯光和角色一致性，缺“视频版 ControlNet”级别的潜空间控制,自建多工具管线,https://news.ycombinator.com/item?id=46498651,YES
-Seedance 2.5 关注者（HN 用户 JimsonYang）,在 Dreamina 上用 Seedance 2.5 生成 30 秒视频,Seedance 2.5 约 2 倍涨价：30 秒生成要 1440 积分（约 $15）,核算成本后决定用量,https://news.ycombinator.com/item?id=49138302,maybe
-迪士尼粉丝/二创作者（HN 用户 josefresco）,想用 Sora 生成迪士尼角色视频,不知道哪些角色被允许使用——“是有一个允许角色清单，还是只能转转盘听天由命？”,未知,https://news.ycombinator.com/item?id=46231493,maybe
-动画/图像创作者（HN 用户 SXX）,想让多实体/动画保持状态一致,AI 模型不擅长跟踪画面中多个实体的状态；想保持一致只能逐帧生成并为每帧写大量描述，做动画基本要生成上千张“垃圾”图再剪辑出能用的,逐帧生成 + 手动剪辑,https://news.ycombinator.com/item?id=45114379,YES
-视频观众（HN 用户 themafia）,观看 AI 配音视频,AI 配音对原作是侮辱，宁愿听创作者原声+机翻字幕,手动找原版,https://news.ycombinator.com/item?id=48299753,maybe
-Sora 内容政策关注者（HN 用户 brandon272）,观察 Sora 内容限制变化,Sora 用户因新内容限制无法再生成同人视频，觉得没有这个功能服务就没用了，社区激烈反弹,去其他平台,https://news.ycombinator.com/item?id=45469437,maybe
-AI 视频创作者（Reddit @deepthrowt_cop663）,用 Kling 1.6 图生视频做项目,上一个项目大约 10 次生成只有 1 条能用；1.6 现在几乎不遵循 prompt，怀疑官方故意推 2.0 让用户消耗更多积分,下个项目换其他视频生成器,https://www.reddit.com/r/KlingAI_Videos/comments/1kexg5h/,YES
-Kling 月付订阅用户（Reddit @SkyValleyDove）,用 Kling 月付订阅做视频,结果时好时坏，有时完全没有动作白扣积分；“情侣跳舞”这种简单 prompt 都做不好；最烦的是 App 总偷偷把迭代次数改成 4、把标准版切成专业版，感觉很阴险,寻找更可靠的应用,https://www.reddit.com/r/KLING/comments/1etp66r/,YES
-Runway/Kling 对比用户（Reddit @MorganJames）,同时用 Luma、Kling、Runway 做视频,Luma 和 Kling 都没有无限套餐且都是抽卡：可能要 roll 10 次才有能用的结果，而且失败的生成也要付费,购买多家订阅对冲,https://www.reddit.com/r/runwayml/comments/1f8p5o2/,YES
-Kling 用户（Reddit @anothermartz）,在 Kling 基础版/专业版之间做选择,总是觉得选错了：模糊了后悔没用专业版，用了专业版又觉得不该浪费——基础版和专业版积分差价大，试错成本高,凭感觉选模型版本,https://www.reddit.com/r/aivideo/comments/1fo09ic/,maybe
-Luma 用户（Reddit @Artforartsake99）,用 Luma 做视频,Luma 约 60% 的时候无视 prompt，经常只给一张静态图，非常令人沮丧,换 Kling,https://www.reddit.com/r/runwayml/comments/1eiu8o2/,maybe
-Runway 用户（Reddit @goldberry-fey）,用 Runway ML 做人物动画,很难控制结果：大多数时候它只是把脸放大而不做动画，而且 Runway 会把画面裁成固定尺寸,试用其他程序,https://www.reddit.com/r/aivideo/comments/1f7cg2h/,maybe
-Sora 用户（Reddit @RealWorldJunkie）,视频做到 2/3 时 Sora 宕机,Sora 英国节点宕机数天，新 prompt 排队一小时才开始处理，项目被迫中断,切到 Kling 完成剩余部分,https://www.reddit.com/r/SoraAi/comments/1k23edo/,maybe
-Kling 重度用户（Reddit @DESIGNvsNONE）,当天有渲染任务,平台极不稳定：两天前完全不能上传，昨天渲染几分钟，今天 7 小时，下午又全是报错,反复重试等待,https://www.reddit.com/r/KlingAI_Videos/comments/1k6u4h4/,maybe
-AI 视频创作者（Reddit @FluffySupermarket998）,想做“隐形钢琴自动弹奏”这种简单镜头,所有视频生成站点都是“脱靶就完全脱靶”：连续失败 5 次都不沾边，自己明明很会写 prompt,换模型重试,https://www.reddit.com/r/KLING/comments/1k096tp/,YES
-发展中国家创作者（Reddit @LakenStar2）,想付费升级 Hailuo/Kling,最好的 AI 视频工具大多来自中国，Google Pay 不允许付款，无法购买增强功能，只能用免费版,寻找绕开支付限制的方法,https://www.reddit.com/r/ChatGPT/comments/1hvdhie/,maybe
-Runway 用户（Reddit @ZookeepergameFar2652）,在 Runway 上做非成人内容项目,偶尔遇到与项目无关的审查屏蔽——在 Hailuo 或 Kling 能用的指令在 Runway 被拦,去中国平台生成,https://www.reddit.com/r/runwayml/comments/1hpdhxh/,maybe
-Kling 付费用户（Reddit @AppearanceExpress117）,想取消 Kling 订阅,支付走 kwai-pay、取消被转到 Stripe，但 Stripe 里查不到任何交易；重置密码邮件也收不到，客服流程混乱,发邮件求助,https://www.reddit.com/r/KlingAI_Videos/comments/1it0pia/,maybe
-AI 视频初学者（Reddit @MeatStickMcFapperton）,学习 AI 视频 prompt,Runway 学习曲线陡、天花板高但更贵更慢更难用；需要先掌握艺术名词和电影摄影词汇才能写好 prompt,先用 Bing/Wombo 练习 prompt,https://www.reddit.com/r/midjourney/comments/1h9b9rw/,YES
-Sora 重度用户（Reddit @WanderingMind59）,用 Sora 做 20 分钟视频,Sora 连最简单的 prompt 都不遵循，还总是自作主张加场景切换，违背上传参考图的初衷；要做出想要的结果得几十次尝试，精疲力尽——一条 20 分钟视频花了两个半月,ChatGPT 出图和 prompt + Sora 反复生成,https://www.reddit.com/r/SoraAi/comments/1jxatb9/,YES
-Sora 用户（Reddit @Flat-Wing-8678）,用 Sora T2V 生成高质量视频,内容限制严重损害效率：动作僵硬、物理破碎、转场生硬，角色在帧间不可预测地变化；限制不只是过滤内容，而是主动劣化模型的生成能力,换其他模型,https://www.reddit.com/r/SoraAi/comments/1idukgp/,maybe
-音乐制作人（Reddit @portola_music）,用 Sora 为自己的新歌生成画面和 Spotify 视频,工具还只是噱头：需要的是“确切得到想要的东西”而不是随机输出，才能真正进入创作流程,用 Sora 随便生成一些宣传图,https://www.reddit.com/r/Songwriting/comments/1jt8y6s/,YES
-AI 艺术创作者（Reddit @Lastchildzh）,想无限制地大量生成视频,在 Luma/Kling/Runway 之间犹豫，最大障碍是没有 Midjourney 那样的无限订阅——希望有 $20-30/月随便做视频、或 $10/月 200 条/天的套餐，但没有厂商提供,继续观望,https://www.reddit.com/r/DefendingAIArt/comments/1kle9y9/,YES
-AI 视频评论者（Reddit @TaleOfTwoDres）,试图把前沿模型产出做成真正可用的视觉内容,模型演示脱离实际用途：最好的技术演示只在极窄条件下生成画面，真正制作时仍然深深令人沮丧，“酷炫输出”和“实际用例”之间鸿沟越来越大,降低预期，手动修补,https://www.reddit.com/r/slatestarcodex/comments/1eb510l/,maybe
-ComfyUI 视频用户（Reddit @bloke_pusher）,想在 ComfyUI 里做完美视频,步骤太多：Flux 出图保 prompt 遵循 → SDXL img2img 提质量 → 丢进 Wan/Framepack 等很久 → 才发现图不适合 I2V 又从头来；怀念改个 prompt 几秒出结果的日子,多节点串行管线,https://www.reddit.com/r/comfyui/comments/1kezlz0/,YES
-ComfyUI 用户（Reddit @Thin-Sun5910）,维护可用的 ComfyUI 视频环境,节点 nightly 更新经常毁掉工作流；对策是准备 3 个便携版（稳定版/季度更新版/最新版）并且停止频繁更新,多版本隔离 + 停止更新,https://www.reddit.com/r/comfyui/comments/1ko2g7e/,maybe
-本地视频生成用户（Reddit @Subject-User-1234）,在 4090 上用 Framepack 本地生成 5 秒视频,ComfyUI 节点 nightly 更新会毁工作流；付费生成不便宜且不一定好，积分用掉就没了；本地 4090 生成一条 5 秒视频要 5-6 分钟,本地 Framepack + 多版本 ComfyUI,https://www.reddit.com/r/buildapcsales/comments/1kfhn65/,maybe
-Stable Diffusion 视频用户（Reddit @martinerous）,想以整条街景为主体做运镜,起始帧+结束帧方案是鸡生蛋问题：没有结束帧就无法描述机位运动，而想要的机位角度又生成不出来；只靠首帧+文字描述时 Wan 很不可控，总加意外运动,首尾帧工作流凑合,https://www.reddit.com/r/StableDiffusion/comments/1kkhlto/,YES
-Forge 用户（Reddit @Hentainavore）,从 Forge 转 ComfyUI 尝试 LTX 视频生成,缺 LTX 节点，节点管理器安装报 import failed 且无法卸载，完全不知道怎么修,未知,https://www.reddit.com/r/StableDiffusion/comments/1kg48dn/,maybe
-ComfyUI 用户（Reddit @diffusion_throwaway）,用 ControlNet 工作流做视频,ControlNet 明明生效（姿势正确）但画面质量很差，自动缩放开关与否结果都一样，不知道哪里错了,论坛求助,https://www.reddit.com/r/comfyui/comments/1korndf/,maybe
-ComfyUI 用户（Reddit @Late_Advice_2890）,想对单张背景图做虚拟相机旋转出不同视角,不要动画不要视频，只要保持场景连贯的几个新角度静帧，现有工具都做不到,未知,https://www.reddit.com/r/comfyui/comments/1kf9lhl/,YES
-产品经理（Reddit @UpwardPM）,把竞品视频转成 Figma 流程图做分析,目前完全手动：录屏、截图、逻辑整理、在 Figma 里重绘，非常枯燥，一次要花好几个小时,手动截图+Figma 重绘,https://www.reddit.com/r/ProductManagement/comments/1kbmpih/,YES
-星战粉丝片创作者（Reddit @DezBailey）,用 AI 做星战 fan film,让图像、配音、动作（角色和运镜）正确且一致是极其枯燥耗时的工作，需要大量试错，这还只是原始片段，不含剪辑,大量试错+剪辑,https://www.reddit.com/r/StarWars/comments/1klknpz/,YES
-Luma 用户（Reddit @sharktank123456）,用 Luma 让角色动起来,角色触碰画面边缘超过一个边就很难动起来；解决办法是在原图里后退构图，或者用手持运镜词让它先动起来再延展,调整构图+加 handheld 词,https://www.reddit.com/r/lumalabsai/comments/1keq57o/,maybe
-Kling 用户（Reddit @BlueLucidAI）,用 Kling 延长（extend）同一 clip 做长镜头,prompt 得当时大多数时候能保持灯光、运镜和节奏一致，但每多延长一次就更难；脸一旦离开画面再回来就会变成另一个人，试过所有办法都没成功,避免角色出画,https://www.reddit.com/r/KLING/comments/1k83tfk/,YES
-InVideo 用户（Reddit @NonstopYapper）,用 InVideo 做视频,拿到精确想要的输出非常难；写得宽泛些才接近预期，且之后还要用专业剪辑工具再改,宽泛 prompt + 专业剪辑软件,https://www.reddit.com/r/NewTubers/comments/1df2yo6/,maybe
-AI 视频工作室（Reddit @idefy1）,靠 AI 视频工具谋生,几乎试过所有工具（PixVerse/Pika/Kling/Luma/Hailuo/Wan/Vivago/Haiper/Domo 等），结论是 Runway 的运镜控制和 VFX 能力仍无对手，但学习成本高,付费用 Runway 为主,https://www.reddit.com/r/runwayml/comments/1jlzvxv/,maybe
-摄影师（Reddit @Junior-Variation-171）,帮客户把真实亲友做成故事角色,客户写了故事想让真人朋友家人出镜当角色，任务量巨大，AI 并不像魔法般简单；只有 Kling 和 Hailuo 可用于动画化,用 Kling/Hailuo 尽力做,https://www.reddit.com/r/ChatGPT/comments/1j9h4a6/,YES
-AI 音乐视频导演（Reddit @Endlesstavernstiktok）,一个人完成 nerdcore 音乐视频全流程,Claude/GPT/Deepseek 磨歌词 → Suno 生成音乐 → Midjourney 出图 → Hailuo/Runway/Kling 动画化，每条视频要 2-3 天,多工具流水线手工串联,https://www.reddit.com/r/aiwars/comments/1k95ub1/,YES
-AI 短片导演（Reddit @Next-Director7426）,用 V2V 做电影感短片,主要用 Kijai 的 HunyuanVideoWrapper 默认工作流，租 A100/H100 生成；为了演员一致性用 FaceFusion 给演员换 AI 脸,租云 GPU + FaceFusion 换脸,https://www.reddit.com/r/StableDiffusion/comments/1k19uki/,YES
-AI 配音一致性用户（Reddit @AI_Girlfriend4U）,为 AI 角色视频配一致的声音,声音没管理好：一开始用年轻美国女声，后来忘了之前用的哪个，变成英国老妇人——声音一致性无工具管理,记录 voice ID,https://www.reddit.com/r/HailuoAiOfficial/comments/1jjlljl/,maybe
-AI 视频创作者（Reddit @Special-Kick-5055）,用免费额度工具做音乐视频,一致性很差，只能在 CapCut 里用特效过度处理来掩盖,CapCut 特效掩盖,https://www.reddit.com/r/aivideo/comments/1jkq7zj/,maybe
-Hailuo 订阅用户（Reddit @Delicious-Diet-9497）,评估是否购买视频生成服务,Hailuo $10/月 1000 积分，每条 6 秒视频要 30 积分，根本不够用，在考虑是否值得换平台,核算积分性价比,https://www.reddit.com/r/ChatGPTPro/comments/1jodob8/,maybe
-Adobe Firefly 用户（Reddit @Affectionate_One7928）,用 Firefly 生成视频并迭代 prompt,应该允许多次免费微调 prompt，满意后再下载/授权时才扣积分；现在积分定价是 Hailuo 的 10 倍以上,只用免费额度,https://www.reddit.com/r/Adobe/comments/1knkgk6/,maybe
-Vidu 用户（Reddit @Visual_Annual1436）,用单张图片保持角色一致,Vidu 的 reference character2video 可以只用一张图而不是每个场景一张图来保持角色一致，非常适合恐怖题材,用 Vidu 参考角色功能,https://www.reddit.com/r/aivideo/comments/1fqpxr9/,maybe
-Vidu 用户（Reddit @Serialbedshitter2322）,用 3 张参考图保持多角色一致,Vidu 可以把 3 张参考图都包含进最终视频并保持角色一致，有点革命性；问题是图像参考只有 3 次使用额度,省着用参考额度,https://www.reddit.com/r/SoraAi/comments/1gox3y9/,maybe
-Kling 用户（Reddit @RainaHobbs890-）,用 Kling 做图生视频,Kling 控制力强但生成时间太长，总是卡在最后 2% 很久；免费用户甚至能在 99% 卡几小时,耐心等或换 Vidu,https://www.reddit.com/r/ChatGPT/comments/1ff0vzg/,maybe
-AI 动漫粉丝（Reddit @Thepuppetmaster23）,用电影剧照做参考做阿丽塔 fan film,用 Vidu 放电影剧照做参考生成相似角色，没的角色用 Google AI Test Kitchen 生成，再手动修图贴近漫画——工作量很大,Vidu 参考图 + 手动修图,https://www.reddit.com/r/alitabattleangel/comments/1jq03r2/,YES
-AI 视频创作者（Reddit @pkhtjim）,教学场景需要免费测试额度,免费额度很难凑：Kling 每天 3 次 5 秒、Pixverse 2 次、Dreamina V1 5 次/V2 3 次，其他免费日额系统排队极久；教室场景需要批量许可,用 Framepack 本地跑,https://www.reddit.com/r/StableDiffusion/comments/1kfmmkg/,maybe
-AI 连续剧集创作者（Reddit @BarBitter3258）,做长达 1 分钟的连载视频,最难的是保持角色相貌（physiognomy）一致，什么都费时间,多工具（Pixverse/Hailuo/Spell AI）+ PowerDirector,https://www.reddit.com/r/StableDiffusion/comments/1kerh1y/,YES
-PixVerse 用户（Reddit @AITransformations）,给 AI 角色视频配口型,在 PixVerse 里输入台词做唇形同步全靠试错，本可以调好但草草了事,trial and error,https://www.reddit.com/r/aivideos/comments/1klsfbq/,maybe
-AI 短片导演（Reddit @Sourcecode12）,用 AI 工具做短片《The Colorless Man》,2 周业余时间、$600 预算完成（传统估 $300k-500k、70 人 2 个月），需要大量工具组合,多工具组合 + 大量人工,https://www.reddit.com/r/aivideo/comments/1kls6gv/,maybe
-独立 SaaS 创始人（Reddit @quiquegr12）,为 indie 开发者/小营销团队做社媒增长,自己搭建 XB Creative Studio：读产品页自动生成 hooks、脚本、UGC 风格 AI 视频并直接发到 TikTok/Instagram——“为修复自己破碎的工作流而建”,自建工具,https://www.reddit.com/r/SaaS/comments/1kgucmw/,YES
-AI UGC 行业观察者（Reddit @kirrttiraj）,评估 AI UGC 视频的商业可行性,10 条短片 $9 太便宜没意义；AI UGC 每个产品每天至少要发 4-5 条，只有批量发布才行，客户已经在这上面花了很多钱,批量生产+矩阵分发,https://www.reddit.com/r/SideProject/comments/1kifas2/,YES
-UGC 创作者（Reddit @WishIcouldDie404）,在品牌不支持发货的国家做 UGC,好品牌不往本国发货，接不到 UGC 单，只能做数字产品视频，选择更少,只接数字产品类 UGC,https://www.reddit.com/r/passive_income/comments/1kkk12v/,maybe
-缝纫类 faceless 频道主（Reddit @nuzh_makes）,运营超级小众的缝纫 faceless YouTube 频道,超级小众的缝纫题材，脚本写作没有参照，频道观看量很差，不知道怎么写脚本和 prompt 才能起量,ChatGPT 润色脚本,https://www.reddit.com/r/SmallYoutubers/comments/1knkz7p/,maybe
-Kling 用户（Reddit @ageofllms）,Kling 涨价后找替代,Kling 首发时买的年度会员极划算、积分滚存、持续更新；现在太贵，只在客户愿意付费的项目上用，转向 Wan 平台大促,项目制使用 + 囤 Wan 促销额度,https://www.reddit.com/r/KlingAI_Videos/comments/1kov4fz/,maybe
-Veo 用户（Reddit @Economy-Criticism768）,想用 Veo 2 生成约 10 分钟素材,AI Studio 只给几条额度；改注册 Google Cloud 免费试用拿 $300 额度，在 Vertex AI 用约 $0.35/秒，约能生成 10 分钟；图生视频要单独申请，几天才批,GCP 试用额度 + Vertex AI,https://www.reddit.com/r/Bard/comments/1k7ov0g/,YES
-Sora 重度用户（Reddit @Pleasant-Contact-556）,Sora 改积分制后的重度使用者,3 个月生成约 3.5 万条视频；积分制公布后队列从 3 分钟暴涨，认为官方没兑现“同等体验”，删号并向苹果申请退款,退款离开,https://www.reddit.com/r/OpenAI/comments/1jbcorf/,maybe
-Sora 用户（Reddit @NCGTNL）,项目 95% 完成只差 3 条视频,只差 22 秒视频却要花好几天：之前 2 天能做 6 分钟，现在排队严重，吐槽官方容量规划极差,排队硬等,https://www.reddit.com/r/SoraAi/comments/1jl8xb3/,maybe
-Sora 用户（Reddit @TheRoadToHappines）,Sora 取消积分制后生成视频,人人免费用导致服务器不堪重负，每条生成要半小时,排队等待,https://www.reddit.com/r/SoraAi/comments/1jj2586/,maybe
-AI 视频剪辑师（Reddit @Beneficial_You_8667）,在 Sora 上微调动画动作,改一两个词系统就把整个动画换掉而不是微调，一个月预算就这样烧光；希望有“微调按钮”：基于小改动只收少量积分,整段重新生成（浪费积分）,https://www.reddit.com/r/runwayml/comments/1jqe3za/,YES
-AI 音乐人（Reddit @Soggy-Talk-7342）,同时做两个 AI 音乐视频,非常痛苦；同时用两个 AI 视频工具会让一致性更糟；Sora+Leonardo 组合靠 storyboard 功能延续上一段输入，但 480p 不超 10 秒、780p 不超 5 秒,Sora storyboard 续写,https://www.reddit.com/r/SunoAI/comments/1jfk9zy/,YES
-Runway 潜在用户（Reddit @Total_Design3347）,评估 Runway 无限套餐,没有无限套餐就不敢随便玩积分；I2V 没有一条接近 prompt 要求；这只是爱好还没找到变现方式，没有 ROI justify 高价套餐,继续观望,https://www.reddit.com/r/runwayml/comments/1jsfeit/,maybe
-AI 视频新手（Reddit @PuzzleheadedGear129）,在 Runway 和其他工具间选择,新手一定会犯错浪费积分，没有无限套餐不敢试；想知道别人是怎么做的,倾向 Runway 无限套餐,https://www.reddit.com/r/midjourney/comments/1jimd2n/,maybe
-Runway 付费用户（Reddit @Fluffy-Explorer-2269）,做项目概念验证,在 Runway 花了约 $50，没有产出一条好视频，只会吃积分，甚至不能对生成结果点“不喜欢”，感觉被偷,放弃 Runway,https://www.reddit.com/r/runwayml/comments/1imrrph/,YES
-Pika 付费用户（Reddit @Lucaspittol）,等 Pika 生成一条视频,等 7 天才拿到一条可能根本处理不正确的视频；且未续订就被偷走 1000 多个已付费积分,对比后认为 Runway 更好,https://www.reddit.com/r/StableDiffusion/comments/1jywimj/,YES
-AI 工具付费用户（Reddit @escapeguywellington）,付费使用 Manus 做视频生成任务，并对比 Runway 的积分制,低档积分几小时就烧光，还没学会用就没了；Runway 高档位有无限慢速额度，Manus 没有，学工具的成本太高,购买高档位订阅,https://www.reddit.com/r/ManusOfficial/comments/1jmbqv9/,maybe
-Runway 用户（Reddit @PixelmusMaximus）,在 Kling 2.0 和 Runway 间算账,Kling 2.0 每条 100 积分，顶级套餐 8000 积分只够 80 条，一周就烧完；1.6 每条 20 积分有 400 条,倾向 Runway 无限套餐,https://www.reddit.com/r/runwayml/comments/1jz6dmg/,maybe
-AI 视频系列创作者（Reddit @YaUzheUmer）,为 2 分钟以上的歌做系列视频,好的 flow 需要每 3-5 秒一个 clip，共需 20-40 条；Runway 一个月积分只生成出 1 条好的+1 条凑合的；单条可以，系列化不行,放弃系列化,https://www.reddit.com/r/SunoAI/comments/1klscuc/,YES
-AI 视频导演（Reddit @DivyanshMundra）,按电影流程做 AI 视频,选音乐→脑内分镜→Midjourney/Sora 出故事板→动画化（Runway/Kling/Sora）需要疯狂的 prompt 工程，是耗时最长的一步→Inshot 剪辑,多工具电影化流程,https://www.reddit.com/r/indiasocial/comments/1kln285/,maybe
-卡车司机转行音乐人（Reddit @MotherMushroom2908）,不会唱歌但想把脑中的歌做成视频,5 个工具串联：Google Labs 出图、Kling 做动作、Gemini 写运动 prompt、Suno 做音乐、ChatGPT 写整体概念,5 工具手工串联,https://www.reddit.com/r/aivideo/comments/1kg656f/,maybe
-AI 视频学习者（Reddit @SomewhereOld2103）,用 Midjourney+视频工具做片子,工作流是 midjourney + pika/luma/kling；prompt 靠 ChatGPT 帮忙——把视觉构想描述给它，由它润色出好 prompt（“AI 最懂 AI 的话”）,ChatGPT 润色 prompt,https://www.reddit.com/r/midjourney/comments/1kaybki/,maybe
-AI 影视制作公司（Reddit @dietpapita）,用 Imagen 3/Veo 2/Kling/Runway Gen4/ComfyUI 做项目,一致性主要靠高度详细的 prompt、并在不同镜头间重复相同段落来维持；靠叙事和创意意图让观众忽略不一致,重复 prompt 段落+人工补救,https://www.reddit.com/r/ArtificialInteligence/comments/1kbjxc7/,YES
-多工具用户（Reddit @ElementalChibiTv）,在多个 AI 平台上做视频,给每个平台写 prompt 都很痛苦：prompt 全是试错——让角色“吃东西”，吃什么、用什么吃，可能性无穷无尽,逐个平台试错,https://www.reddit.com/r/lumalabsai/comments/1kfsk00/,maybe
-AI 课程需求者（Reddit @BrentYoungPhoto）,客户想买“高级 AI filmmaking”课程,市面上所有课程都极其基础，这些“guru”只会用闭源付费服务，对真正的电影制作一无所知；给客户免费上了 1 小时 Zoom 课就覆盖了课程全部内容,自学+免费咨询,https://www.reddit.com/r/midjourney/comments/1k9hsui/,maybe
-Kling 用户（Reddit @SoBeachboy）,反复尝试让 Kling 生成“女人拿枪指镜头微笑”,多次“生成失败请换 prompt”后终于跑通，结果是静态图：没有指向、没有微笑，只有缓慢放大——浪费积分；希望 Kling 像 Midjourney 一样公布禁用词清单,重试+浪费积分,https://www.reddit.com/r/KlingAI_Videos/comments/1kkc7zs/,YES
-Kling 新用户（Reddit @HVB86）,用 Kling 做建筑可视化视频,免费版一条要等几小时；订阅后约 8 分钟一条；只用起始帧的镜头运镜奇怪，结果参差不齐,订阅+多试,https://www.reddit.com/r/archviz/comments/1kc2wr1/,maybe
-舞蹈视频创作者（Reddit @Big_Primary_1781）,用 Kling 复刻舞蹈编排,研究日语/阿拉伯语舞蹈视频，让 ChatGPT 总结动作并细化变缓，自己再编辑 prompt 复制到 Kling 并强调配饰细节,ChatGPT 总结动作+手工改 prompt,https://www.reddit.com/r/aiwars/comments/1k9zrsi/,YES
-AI 视频创作者（Reddit @AIinfluencer）,做 AI 改编视频,图片生成阶段老被拦，只能不断换 prompt 直到溜过去；生成后总要用 CapCut 大量剪辑才能成片,换词绕审+CapCut 剪辑,https://www.reddit.com/r/CursedAI/comments/1kpg2vb/,maybe
-Kling 2.0 付费用户（Reddit @Impressive_Cow_1267）,用新模型做图生视频,几周来换了各种图和 prompt 全部“处理失败”，且失败不退积分要自己追客服，“近乎诈骗”；1.6 没问题,追客服退款,https://www.reddit.com/r/KLING/comments/1k79kx6/,YES
-Veo 用户（Reddit @Unlucky_Tap_3097）,在 Google AI Studio 用 Veo 2,在 Google AI Studio 用 Veo 2 时每次都报错并拦截 prompt，无法正常生成,换其他平台,https://www.reddit.com/r/aivideo/comments/1kbuqja/,maybe
-电商 UGC 创作者（Reddit @egoic）,用 Veo 为产品 packshot 做视频,Veo 导入产品和标签没问题，但每天额度太少、prompt 遵循不够，做不出想要的切换和摇镜；想把首帧场景搭建外包给 img2img 以获得更多控制,img2img 重摆产品图做首帧,https://www.reddit.com/r/GeminiAI/comments/1kff92d/,YES
-AI 二创作者（Reddit @Knowthrowaway87）,把《指环王》预告片复刻成吉卜力风格,花 $200 ChatGPT/Sora + $250 各平台视频积分 + 9 小时重剪：截图 102 个镜头→Sora Remix 成吉卜力风→Kling/Luma 动画化→按预告片节奏重剪,截图+Remix+多平台生成+重剪,https://www.reddit.com/r/neoliberal/comments/1j4uofk/,YES
-Runway 用户（Reddit @LastCall2021）,等 Runway 角色/物体一致性功能,Gen4 的 prompt 遵循比 Sora 好，但一致性功能上线前发挥不了全部潜力；目前用 Kling 1.6 的 Elements 功能凑合,用 Kling Elements 顶替,https://www.reddit.com/r/runwayml/comments/1jptsmq/,maybe
-Runway 用户（Reddit @Turbulent_Car_9629）,评估 Runway 积分制 vs 无限套餐,怀疑官方故意放慢免费档速度（排队时间长于生成时间）逼用户买积分；买积分要几百美元，不如花在 Kling/Sora 组合上,多平台组合,https://www.reddit.com/r/runwayml/comments/1js629k/,maybe
-Sora 用户（Reddit @RealWorldJunkie）,因 Sora prompt 遵循差而切换,忍无可忍买了一个月 KlingAI，即使不用最新模型、省着用积分，也被其 prompt 遵循度震惊，基本不用重 roll,付费买 Kling 月卡,https://www.reddit.com/r/SoraAi/comments/1jzut2r/,maybe
-DaVinci Resolve 用户（Reddit @collin3000）,用早期 Sora 内测做视频,认识 Sora 内测用户，反馈说要生成几百次才能得到像演示视频那样的东西；照片延展都要大量重试和清理，视频更难；云生成每次都扣价格未知的积分,大量重试,https://www.reddit.com/r/davinciresolve/comments/1jsji3s/,maybe
-AI 视频工具创始人（Reddit @Danihamdani777）,做 AI 视频 SaaS 需要用户试用转化,MVP 已跑通，但获客时必须先给免费额度（API 积分），烧钱极快——“像 Sora 发布前那样，让人试用才相信”，验证阶段资金是最大障碍,自掏腰包补贴免费额度,https://www.reddit.com/r/Entrepreneur/comments/1k3hr5o/,maybe
-Kling+MiniMax 用户（Reddit @WanderingMind59）,同时订阅多个 AI 视频工具,Kling 质量更好、更少伪影，但有些东西 Kling 反复试都做不对，换 MiniMax 就成了；现阶段最好多订阅几家对冲，各有所长,多平台订阅对冲,https://www.reddit.com/r/KLINGAIVideo/comments/1gsjwvo/,maybe
-AI 短片观众/创作者（Reddit @Imaginary_Jump_8701）,观察 AI 短片成本结构,90% 小创作者没钱做好，AI 视频仍然相当贵；有人花 $1700 做的短片仍缺情绪和面部动作,攒钱做单部,https://www.reddit.com/r/NewTubers/comments/1k6dzxl/,maybe
-广告从业者（Reddit @Andrew_42）,评估 AI 能否替代摄制组做广告,AI 做牙膏广告可能比摄制组便宜但不会更好；AI 省下的制作费在投放费面前不算什么；AI 强在音乐视频、静帧微动、极端风格化,只用在风格化场景,https://www.reddit.com/r/midjourney/comments/1kbzkfv/,maybe
-ComfyUI 视频工作流用户（GitHub @envy-ai 等）,在 ComfyUI 里改 prompt 后重新运行,每次改 prompt 模型都重新加载，模型存在普通硬盘上时极其缓慢；新缓存系统会反复重载模型,加 --cache-classic 启动参数,https://github.com/Comfy-Org/ComfyUI/issues/14618,YES
-LTX-Video 用户（GitHub @krc1983）,想用 prompt schedule 节点控制视频随时间变化,折腾得满头大汗也做不出来；FizzNodes 的调度节点是为 SDXL/ControlNet 设计的，和新一代视频模型的工作方式完全不同，不可能生效,论坛求助,https://github.com/Lightricks/LTX-Video/issues/14,YES
-LTX-Video 用户（GitHub @jzhang38）,用官方 README 命令和 demo prompt 复现效果,即使照抄 demo prompt 也生成不出 demo 质量；高分辨率+257 帧会变模糊，官方确认帧数高会模糊,降分辨率和帧数,https://github.com/Lightricks/LTX-Video/issues/15,maybe
-LTX-Video 用户（GitHub @x4080）,想用 LTX 延长视频,把最后一段视频的尾帧拿去 img2vid：首帧不错但后面过饱和；换种子后视频开始“幻觉”；延长时亮度/对比度会变,换种子+手动调,https://github.com/Lightricks/LTX-Video/issues/32,YES
-Wan2.2 用户（GitHub issue 提问者）,用 Wan Animate 做人物动画,官方没有最佳实践：参考图尺寸、clip vision 尺寸、蒙版画法、prompt 怎么写都靠猜；ComfyUI 官方工作流人物一致性差点意思,自行摸索参数,https://github.com/Wan-Video/Wan2.2/issues/161,YES
-Wan2.2 5B 用户（GitHub issue 作者）,本地跑 Wan2.2 5B 模型,各种 prompt 都试了，畸形太多、速度极慢（宣传“720p 极快”不实）、VAE 吃光内存；14B 在 24GB 显存+32GB 内存上都跑不了，小模型不行就是大问题,等官方修复,https://github.com/Wan-Video/Wan2.2/issues/32,maybe
-Wan2.2 中文用户（GitHub issue 作者）,用 Wan2.2 14B 文生视频,负面 prompt 无法去除不想要的元素：“室外”会触发铁丝网、“半透明”会给前景加障碍物，怎么改都挡不住,不断精简 prompt 碰运气,https://github.com/Wan-Video/Wan2.2/issues/94,YES
-Open-Sora 用户（GitHub issue 作者）,用 t2v 示例生成视频,效果和想象差太多，怀疑自己设置有问题,论坛求助比对配置,https://github.com/hpcaitech/Open-Sora/issues/118,maybe
-CogVideoX 用户（GitHub issue 作者）,在 A100 上跑 CogVideoX1.5-5B T2V,生成一条视频要 6 小时，占 80GB 显存,等官方优化/换 diffusers 版,https://github.com/zai-org/CogVideo/issues/530,maybe
-CogVideo 社区用户（GitHub issue 汇总）,微调 CogVideo 做自定义视频,3D VAE 比扩散模型吃显存得多，严重限制微调 batch size；用户集中诉求：I2V 开源、VAE 微调、ComfyUI 适配,等官方排期,https://github.com/zai-org/CogVideo/issues/194,maybe
-lip-sync 开发者（GitHub Wav2Lip issue 作者）,用 Wav2Lip HD/Retalker 做唇形同步,又慢又吃 GPU，差点想放弃这项技术；RTX 3060 12GB 上一条 10-30 秒 1080p 要 1 分多钟；换人脸识别模型还要写不少代码,群里问其他人配置,https://github.com/Rudrabha/Wav2Lip/issues/584,YES
-diff2lip 用户（GitHub issue 作者）,用 diff2lip 做唇形同步,生成的牙齿很奇怪；推理吃满 48GB 内存但显卡完全不工作,调 checkpoint/参数,https://github.com/soumik-kanad/diff2lip/issues/6,maybe
-Veo 付费用户（GitHub issue 作者）,买 VEO 3 扩展做自动化生成,成功约 30 个 prompt 后所有请求都失败，报“生成过快/高需求”错误,等一段时间重试,https://github.com/trgkyle/veo-automation-user-guide/issues/6,maybe
-AI 视频管线运营者（GitHub market-fit-research）,运营自动化视频生产管线（营销/原型/内容）,每隔几个月模型换代：旧 prompt 作废、参考图逻辑、积分计费、导出设置全部要重学，没有“我要什么”和“哪个模型做”之间的标准抽象层，每次换模型都像从零开始,重建管线,https://github.com/nimius-debug/market-fit-research/issues/108,YES
-可灵付费会员（黑猫投诉用户）,充值黑金/铂金包年会员（2759 元）用可灵做视频,会员页宣传图片生成全年免费实际扣费；延长视频功能会把人物改掉；视频漏提示词、角色和建筑物一样大、对白串口；生成十几次都达不到效果；客服拖延不处理,12315 投诉要求退款,https://tousu.sina.cn/complaint/view/17396325289,YES
-可灵会员用户（黑猫投诉用户）,开通 7 天低价试用会员,页面主打低价试用、自动续费提示字很小、扣费前无短信提醒；发现后客服承诺的退款短信一直没收到，支付宝申诉被冷处理,12315 投诉,https://cq.tousu.sina.cn/complaint/union_index?keyword=%E6%8F%90%E7%8E%B0%E4%BA%86%E4%B8%8D%E5%88%B0%E8%B4%A6&sn=17352474261&type=2,maybe
-可灵包年会员（黑猫投诉用户）,买黄金+铂金包年会员用可灵生成,铂金包年不覆盖黄金会员而是延后生效；用了三四个月，生成风格越来越烂根本没法用；申请退款被电话告知不能退,投诉,https://cq.tousu.sina.cn/complaint/union_index?keyword=%E9%80%80%E6%AC%BE&sn=17358067544&type=2,maybe
-可灵付费会员（黑猫投诉用户）,付 17.99 元买会员做 AI 内容生成,生成含基础文字的内容时多次出现文字错误、乱码、无法生成、内容与指令明显不符，基本无法正常使用；客服拒绝退款,投诉要求退款,https://ln.tousu.sina.cn/complaint/union_index?keyword=%E9%80%80%E6%AC%BE&sn=17358067544&type=2,maybe
-即梦会员用户（黑猫投诉用户）,买即梦月租会员做视频,制作视频两三个小时毫无反应，侵害月租权益；退订只能在电脑端操作，属于霸王条款,投诉要求退 41 元,https://tousu.sina.cn/complaint/union_index?keyword=%E9%80%80%E6%AC%BE&sn=17368171898&type=1,maybe
-海螺 AI 会员（黑猫投诉用户）,充 68 元月费会员做视频生成,按指引输入详细指令，两条视频画面内容与指令严重偏离、质量极低；平台只按“消耗积分不退”退 23 元,黑猫投诉要求全额退款,https://tousu.sina.cn/complaint/view/17400290703,maybe
-小云雀 APP 用户（黑猫投诉用户）,用小云雀做中文银行宣传短视频,配音大量读音错乱、画面全是外国人物和英文环境；要求生成整条视频却给多个 15 秒片段且人物/背景/服装不一致；扣费规则不透明、失败不退积分,投诉要求退积分,https://tousu.sina.cn/complaint/view/17399774908,YES
-AI 视频玩家（搜狐号“有风”实测）,用可灵 O1 拍《疯狂动物城》番外,上传 4 张尼克图建主体库，第二遍生成时背景警员全变成“朱迪克隆体”；局部重绘要么还是兔脸要么把朱迪改没；多角色跳舞时两人融成“融合怪”或一个不动,换方案重生成,https://m.sohu.com/a/962501945_122572408/,YES
-教育机构课程负责人（HeyGem 案例）,为 10 位讲师制作标准化课程视频（每段 5 分钟、讲稿一致、仅出镜人不同）,传统流程拍摄+剪辑+对口型+导出，光协调时间表就 3 天、后期再 2 天，人力成本极高,用 HeyGem 数字人：一段音频驱动十个讲师形象自动生成,https://devpress.csdn.net/v1/article/detail/156558882,YES
-即梦 Seedance 创作者（什么值得买社区文）,用即梦做 AI 短视频,人物一致性差（参考图/锁种子也挡不住变脸换装）、纯抽卡模式匹配度低、排队久积分消耗快、连贯性差，陷入“试错-失败-重试”循环,用扣子工作流先生成标准化分镜图再导入视频生成,https://post.m.smzdm.com/p/axkwko5d/,YES
-AI 视频配音创作者（SegmentFault 社区）,做 AI 视频的配音和背景音乐,音画对不上是共性难题，嘴型对齐（Lip-Sync）是重灾区；侧脸或面部阴影会让嘴角边缘模糊,玉芬 AI 平台声音克隆+数字人口型同步 API,https://segmentfault.com/a/1190000048125883,YES
-TikTok 跨境二创团队（SegmentFault 社区）,搬运海外爆款视频做二创去重,原视频的外语硬编码字幕/贴纸难处理；既要保留爆款基因又要 100% 规避查重,SnapTik 无水印下载→麦斯创意复刻→GhostCut 擦字幕+翻译加字幕,https://segmentfault.com/a/1190000047987290,YES
-角色视频管线开发者（dev.to 作者 gurayta）,搭建角色视频生产线,做到第二部分撞墙：视频生成环节无法保证角色发音的确定性（唇形/语音一致性）,自研管线逐段解决,https://dev.to/gurayta/sesi-modelden-geri-almak-karakter-videolarinda-telaffuzu-deterministik-yapmak-bolum-3-45of,maybe
-Faceless 频道自动化需求（Product Hunt 上的 PassiveShorts）,希望选个主题、声音和排期，就自动写稿、配音、加字幕并发布到 YouTube/TikTok,手动做 faceless 频道全流程耗时，现有工具不自动发布,PassiveShorts 等新工具（市场已出现）,https://www.producthunt.com/products/passiveshorts,YES
-AI 视频工具开发者（r/KlingAI_Videos 用户）,开发并上线了 video-to-prompt 工具：上传视频返回可复刻相似视频的 prompt,社区对“视频反推 prompt 复刻”有真实需求，作者直接做了产品并发布,自建工具,https://www.reddit.com/r/KlingAI_Videos/comments/1k66dg7/,YES
-Kling 用户（r/KlingAI_Videos）,生成时不想让角色嘴巴动,Kling 总是自作主张加嘴部动作，不知道怎么关,社区求助,https://www.reddit.com/r/KlingAI_Videos/comments/1ko2bax/,maybe
-Kling 用户（r/KlingAI_Videos）,怀疑积分少时给差结果,积分低时 Kling 给的结果明显变差，怀疑被限流,观察+吐槽,https://www.reddit.com/r/KlingAI_Videos/comments/1kms4je/,maybe
-Kling 用户（r/KlingAI_Videos）,生成视频时频繁“process failed”或卡 99%,生成失败率高且卡死，只能重试,反复重试,https://www.reddit.com/r/KlingAI_Videos/comments/1fp8ety/,maybe
-Kling 用户（r/KlingAI_Videos）,纠结用 1.6 还是 2.0,2.0 价格是 1.6 的 5 倍（100 vs 20 积分），质量提升是否值这个价拿不准,社区对比讨论,https://www.reddit.com/r/KlingAI_Videos/comments/1k1j6y8/,maybe
-ChatGPT Pro 付费用户（OpenAI 社区用户 @zeshanwaris 等）,付 $200 买 Pro 套餐就为了用 Sora 视频生成,付款后才发现“新账号视频生成暂时禁用”，购买前没有任何提示；同帖 123 人跟帖同病，多人感觉被“钓鱼”（gotcha）,发帖维权、等待官方开放,https://community.openai.com/t/1174221,YES
-AI 视频 SaaS 开发者（OpenAI 社区用户 @admin215、@vmstb）,用 Sora 2 API 全 webhook 模式做视频生成产品,部分被审核拦截的请求完全收不到 webhook 回调，无法通知用户视频因审核失败——用户以为是开发者的系统坏了,论坛跟帖催官方修复（后确认有 PR 修复）,https://community.openai.com/t/1361690,YES
-Kling iOS 付费用户（App Store 评论用户）,用 Kling App 做 AI 视频，需要替换配音并做口型同步,App 自带的“去掉生成音频+上传 1 分钟音频做 lip sync”入口埋得极深，只误打误撞进过一次；另一个版本只给 5 秒，功能可发现性极差,反复摸索菜单,https://apps.apple.com/us/app/kling-ai-ai-image-video-maker/id6738049229,maybe
-AI Video App 免费用户（App Store 评论用户）,想在视频里做两人跳舞的画面,试了好几次都无法生成两人同框跳舞，选项不够用,放弃该功能,https://apps.apple.com/us/app/ai-video-ai-video-generator/id6478868302,maybe
-VideoGPT 年付用户（App Store 评论用户）,付了 Pro 和年费用 VideoGPT 做视频,prompt 要求视频，App 却只生成一张图片；反复尝试两天都是如此，申请全额退款,App Store 申请退款,https://apps.apple.com/us/app/videogpt-ai-video-generator/id6451396274,maybe
-播客主（Reddit r/podcasting @SoMuchCrimeSoLittleT）,给纯音频播客做短视频片段发社媒,需要 Canva 加画面再导入 CapCut 加字幕，“真希望不用两个工具”——试过很多工具，字幕环节没有比 CapCut 更好的,Canva+CapCut 双工具手工流程,https://www.reddit.com/r/podcasting/comments/1jct409/,YES
-房产经纪人（Reddit r/realtors 引述的影视剪辑师 @666POD）,为房源制作看房视频,专业航拍+稳定器 4K 看房视频要 2-3 天拍摄剪辑，至少 $1500/条，严重侵蚀经纪人利润，非豪宅房源根本做不起,用手机粗剪视频凑合,https://www.reddit.com/r/realtors/comments/1kp4p9p/,YES
-网文推文/漫剧创作者（SegmentFault 社区）,把网络小说做成 AI 漫剧视频引流,制作链路极繁琐：ChatGPT 写分镜→Midjourney 画图→Luma/可灵转视频→剪映配音，跨平台耗时；800 字剧本折腾一天也难成片，废片率极高，且角色跨镜头“脸崩”,多工具拼凑流水线,https://segmentfault.com/a/1190000048159236,YES
-数字人直播带货副业者（什么值得买社区文引述）,用 AI 数字人做直播带货副业,三大坑：几千元的“陪跑课程/独家工具”机构存活率不到 6 个月（315 已点名）；2026 年 Q1 未标注 AI 身份的违规直播间占 67%，处罚为限流 7 天直至永久封号；仿冒名人形象直播带货已被行政拘留,去腾讯智影/硅基智能等平台用免费额度跑流程，只克隆本人形象,https://post.m.smzdm.com/p/a26od2qn/,YES
-无代码背景的音乐人/独立开发者（Faceless.video 创始人 Jacob Seeger）,用 Bubble 无代码打造全自动 faceless 视频频道平台,找开发代理做 SaaS MVP 报价 3 万美元、无力承担；此前 2.5 年做的 6 个应用全部失败；音乐人营销服务受行业付款约束、无法同时服务多客户,自学 Bubble，第 7 个产品约 $250 基建+$250 推特推广冷启动（现已 $83K/月、$1M ARR）,https://www.indiehackers.com/post/3FvQoHUh2SglJvAJGkSF,YES
-AI 视频创作者（HN 用户 Nina1000）,用 Runway 等文生视频工具做内容,Runway 经常在产出能用的东西之前就耗尽全部积分，即使严格遵守官方指南,换用 Hailuo AI，或等 Sora Turbo,https://news.ycombinator.com/item?id=42368604,YES
-创作者（HN 用户 kurthr）,想复刻一条喜欢的视频的风格和内容,没有直接的参考视频复刻功能，只能把目标视频丢给 o1 让它写描述性 prompt，再把 prompt 喂给 Sora，靠人工和 AI 批评反复迭代，且不知道要花多少钱,o1 反推 prompt → Sora 生成 → 人工迭代,https://news.ycombinator.com/item?id=42368604,YES
-专业概念设计需求方（HN 用户 kevingadd）,想用 AI 出接近专业概念稿质量的画面,prompt 出来的东西远不如付费概念设计师的粗略稿，而且模型积分并不便宜,继续付费找专业概念设计师,https://news.ycombinator.com/item?id=42368604,maybe
-AI 视频导演（HN 用户 troupo）,想把电影脚本交给自动化导演/摄影/剪辑,必须为灯光、道具、服装、机位与运动、走位、剪辑、音乐、音效等每一项提供正确详细的指令，否则出不来想要的东西,手动编写超详细分镜指令,https://news.ycombinator.com/item?id=42368604,YES
-内容营销创作者（HN 用户 neom）,为加拿大日做 3 分钟内容营销视频,单一工具做不完，需要组合多个工具：Midjourney 出图 + Pika 动起来 + Suno 配乐，耗时 40 分钟,多工具手工串联（midjourney+pika+suno）,https://news.ycombinator.com/item?id=42368604,YES
-AI 图像/视频创作者（HN 用户 yeknoda）,想把脑中画面复刻出来,达到目标所需的 prompt 数量和迭代量非常大，且常常做不出最初想要的东西；用 ground truth 视频测试“从零复刻要多少 prompt 和编辑”，在有限时间和迭代次数下基本不可能,大量 prompt 迭代,https://news.ycombinator.com/item?id=42368604,YES
-ChatGPT Plus 用户（HN 用户 throwup238）,用 Plus 套餐做 Sora 视频,Plus 不能单次购买更多积分、视频带水印，基本只是个小型试用版，逼用户升级 Pro,升级到 Pro,https://news.ycombinator.com/item?id=42368604,maybe
-视频模型用户（HN 用户 jiggawatts）,使用正式发布的 Sora,官方演示的是全量模型，发布的却是量化+审查版，物理效果差、复杂动作不行，演示与实物不符的“诱饵切换”,等待更成熟版本,https://news.ycombinator.com/item?id=42368604,maybe
-AI 影像创作者（HN 用户 chromanoid）,希望边说边改地编辑 AI 画面，像跟一个隐形画师/摄影组对话,目前只能写文本 prompt，来回改效率低；已开始用 ChatGPT 语音对话来调整画面,用 ChatGPT 语音对话调整图片,https://news.ycombinator.com/item?id=40358041,YES
-Veo 2 预览用户（HN 用户 simonw）,测试 Veo 2 的 prompt 遵循度,同一条“鹈鹕骑车”prompt 生成 4 个视频，只有 2 个真的是鹈鹕骑车，一个是鹈鹕跑步、一个是停在不动的自行车上，prompt 遵循像抽卡,多次生成挑选,https://news.ycombinator.com/item?id=42432914,maybe
-Google AI Pro 付费订阅用户（HN 用户 lelandbatey）,用 Flow/Veo 做视频，只给了 2 个 prompt,2 个 prompt（共 4 条 8 秒视频）就被警告“今天还能生成 2 条”，Google 对付费用户的真实限额遮遮掩掩，无法判断是 bug 还是故意,等限额重置,https://news.ycombinator.com/item?id=44044043,maybe
-Google 生态创作者（HN 用户 matsemann）,想用 Gemini/Flow/Veo 做图和视频,Google 产品线混乱：Gemini 经常说不能做图、不知道自己该支持什么、看不到当前模型版本，要在 aistudio/flow/veo/gemini 之间来回试,在多个 Google 产品间逐个试,https://news.ycombinator.com/item?id=44044043,maybe
-专业图像工作流用户（HN 用户 ericskiff）,需要 Imagen 4 的图像编辑、inpaint/outpaint、参考图功能（核心工作流）,申请入口只是一个 Google 表单，提交后石沉大海,等待审批,https://news.ycombinator.com/item?id=44044043,maybe
-Sora 付费用户（HN 用户 mikhmha）,付费试用 Sora 一个月做视频,多种 prompt 方式都试过，输出始终平庸；生成耗时长，且约 50% 概率因内容违规失败，像“庄家每次都亏钱的赌场”,放弃 Sora,https://news.ycombinator.com/item?id=47508246,YES
-AI 视频从业者（HN 用户 ronsor）,评估 Sora 2 作为生产工具,运行昂贵、质量不足以让客户认真付费、内容限制太多导致大多数人觉得不好玩，更像技术演示,转向 Kling、Higgsfield 等模型,https://news.ycombinator.com/item?id=47508246,maybe
-AI 视频评测者（HN 用户 dfxm12）,评估 AI 音乐视频的连贯性,反复出现的角色在镜头间漂移，没有一条视频能从头到尾保持连贯叙事；Veo 3 连 8 秒的连贯故事线都保不住,多次重 roll,https://news.ycombinator.com/item?id=48939524,YES
-AI 图像/视频创作者（HN 用户 59percentmore）,想生成特定创意画面,Gemini/ChatGPT 的护栏、素材库“污染”和“总是产出最平庸版本 prompt”的倾向，让 prompt 过程变成现实与意图的拉锯,绕路措辞、反复重试,https://news.ycombinator.com/item?id=48939524,maybe
-剧本创作者（HN 用户 doublerabbit）,和专业编剧叔叔合作把剧本场景做成 AI 视频,生成被限制在 10 秒，且即使小渲染不加返工也要花不少钱,用 AI 做样片去 pitch 融资,https://news.ycombinator.com/item?id=46498651,maybe
-AI 视频创作者（HN 用户 userbinator）,想做心里非常具体的画面,模糊需求第一次就出“slop”；具体需求要几十次生成才接近，且之后还要在图像编辑器里手动修；$15/30 秒约合 $1800/小时，按 1/10 成功率单条可用镜头约 $180,大量生成 + 手动后期,https://news.ycombinator.com/item?id=49138302,YES
-AI 视频工作流研究者（HN 用户 dagaci）,用 H3（MiniMax）API 直接生成视频,好结果其实来自 ComfyUI 工作流 + 本地 prompt 扩写模型；直接用原始 prompt 效果差，用 ChatGPT “改进”prompt 后效果才好,本地模型扩写 prompt + ComfyUI,https://news.ycombinator.com/item?id=49138302,YES
-AI 视频工作流搭建者（HN 用户 echelon）,需要跨镜头的场景/位置一致性,场景一致性工具（如 ArtCraft、ComfyUI 插件）正在出现但都还不成熟,用不成熟的开源工具凑合,https://news.ycombinator.com/item?id=45427982,YES
-GPT-5 图像用户（HN 用户 davidmurdoch）,让 GPT 5 生成人物图后修改衬衫颜色,模型以内容政策为由拒绝简单改色请求；随后图像工具被直接禁用，连原样重新生成都做不到,未知,https://news.ycombinator.com/item?id=45427982,maybe
-AI 短片制作人（HN 用户 badsectoracula 引述 NeuralViz）,用自己 webcam 表演动作和配音，再用 AI 转换,好的 AI 视频不是让 AI 干 99%，仍需表演、编剧、剪辑深度参与,webcam 自拍表演 + AI 换脸/换风格,https://news.ycombinator.com/item?id=46498651,maybe
-Sora API 用户（HN 用户 majewsky）,用 Sora 1 API 生成视频,Sora 1 约 $0.50/秒，比 Veo 3 略贵，成本敏感,比价后选型,https://news.ycombinator.com/item?id=45469437,maybe
-Midjourney 转视频用户（Reddit @ShadowKissedMoon）,用 Runway 做 10 秒可用视频,为了一条像样的 10 秒视频需要烧掉的积分数量很疯狂,考虑换 Kling,https://www.reddit.com/r/midjourney/comments/1jimd2n/,maybe
-Adobe 用户（Reddit @Hazrd_Design）,希望 Adobe AI 视频对坏结果退积分,还没见过对坏结果退积分的生成式视频工具；Runway/Pika 提供免费预览或最终渲染才扣积分的模式值得 Adobe 借鉴,用预览制工具,https://www.reddit.com/r/Adobe/comments/1knkgk6/,maybe
-Runway 订阅用户（Reddit @Conscious-Kitchen412）,应对模型快速迭代的订阅策略,不要买年付：新模型 Gen-8 两三个月后才出，月付订阅 2-4 个月，竞品更好就跳船，等 8-10 个月 Runway 出新模型再回来,按月订阅+跳船策略,https://www.reddit.com/r/runwayml/comments/1jlzvxv/,maybe
-AI 视频工具对比用户（Reddit @FluffySupermarket998）,需要多服装/背景+流畅运镜的角色一致性,Sora 贵且功能有限；Runway 精确控制多但不好用；Hailuo 免费试 1000 积分只有不到 1/3 能用；最后靠 Kling 的主体参考+4 图参考功能,Kling 参考功能,https://www.reddit.com/r/KLING/comments/1k096tp/,YES
-Wan2.2 用户（GitHub @zwukong 等）,用 Wan Animate 面部捕捉,Kijai 工作流的面部捕捉有问题，会造成人物一致性问题,等官方修复,https://github.com/Wan-Video/Wan2.2/issues/161,YES
-即梦基础会员（黑猫投诉用户）,用即梦连续包月会员生成视频,网站不断生成视频失败，后面乱生成视频还扣积分，耽误两天；客服承诺退还积分和补偿全部不认账,投诉,https://tousu.sina.cn/complaint/union_index?keyword=%E9%80%80%E6%AC%BE&sn=17368171898&type=1,maybe
+"用户是谁","正在做什么","遇到什么问题","现在怎么解决","原始URL","是否可能变成AI SaaS"
+"广告营销人员","想要模仿竞争对手的广告","很显然，不能直接下载并发布他们制作的广告，想要稍作修改","在别人的优秀的广告基础上进行稍作修改，相当于二次创作，变成自己的原创广告视频,wan 2.7和kling omni o3这些模型已经可以更改视频中所有你想要的元素了","https://www.reddit.com/r/generativeAI/comments/1slhjfr/what_tool_can_i_use_to_copy_a_video_but_just/","YES，也相当于reference video to video"
+"内容创作者","制作自己的视频频道内容","虽然拥有非常棒的AI视频生成器，但是生成之后还不得不把这些片段拖进剪辑软件，然后花上三四个小时进行手动剪辑，调整大小，适应不同平台，还要修饰音频。问题只解决了创作部分，但剪辑部分仍然停留在过去的水平","需要一个真的能够读取原始素材并实际处理繁琐工作的工具，例如剪掉静音、放大调整画面为竖屏的工具","https://www.reddit.com/r/aivideos/comments/1qo8huo/we_have_amazing_ai_video_generators_now_so_why_is/","maybe,剪辑本身非常复杂和灵活，有一点点难,但是如果想要做到一些基础的固定操作，还是可以实现的"
+"正在研究如何创作AI视频的人","想要在项目中使用人工智能驱动的动作捕捉工具，完美复制参考视频中人物的动作、姿势、动作和时间轴,并将其应用到另一个角色","人物动作比较难控制","找到一款能够提供高精度、流畅运动质量和灵活性的工具，以适应不同的应用场景，例如角色动画、视觉特效、3D动画、动作捕捉、内容创作","https://www.reddit.com/r/generativeAI/comments/1tfqjpk/looking_for_ai_motion_control_tools_that_copy/","maybe"
+"视频创作者","在打造自己的视频工作流，并且创作视频","流程比较复杂，需要跨多个平台之间来回切换，用GPT写脚本，elevenlabs配音，Midjourney出图片，artlist视频片段和音乐之间来回切换","将多款工具都集中在一个平台上,不用麻烦的复制、粘贴、下载和重新上传文件,不用在不同界面反复跳转","https://www.reddit.com/r/creators/comments/1ptwxla/managing_multiple_ai_tools_for_video_creation_is/?utm_source=chatgpt.com","YES"
+"开发者","BYOK自带密钥的方式是否被接受","用户可以只需为SaaS本身付费，无需为订阅中包含的AI使用付费，这样子的方式是否能被大众接受","也许可以提供两种方式，对于没有密钥的用户进行基本的订阅制，对于拥有密钥的用户，可以进行填写自带密钥的方式，但是要做好安全","https://www.reddit.com/r/SaaS/comments/1vgdruz/would_a_byok_model_work_for_a_saas_product/?utm_source=chatgpt.com","YES"
+"视频创作者/内容制作人","用素材（片段、图片、脚本）制作视频","剪辑过程枯燥重复、缺乏创意；希望自动组合片段、自动加字幕、处理转场和节奏，并快速生成多个版本","寻找AI工具；评论区提到Pictory、Descript、VEED、aivideo、boomshare.ai","https://www.reddit.com/r/automation/comments/1pewjax/looking_for_tools_to_automate_video/","YES"
+"个人内容创作者/注重隐私的用户","在已有的个人视频中替换自己的脸","视频中有自己各个角度走动镜头；希望用AI生成的脸替换，而不是简单打码或黑圈；不能使用真人脸部（deepfake）","roop-unleashed、facefusion","https://www.reddit.com/r/StableDiffusion/comments/1fyi90a/how_can_i_replace_my_face_with_ai_generated/","YES"
+"音乐视频创作者/爱好者","制作一个多角色切换并唱同一首歌的短视频","需要免费的AI工具实现角色替换、动作模仿和口型同步","Wan Animate（但网站收费）、Akool Face Swap的视频对口型功能","https://www.reddit.com/r/StableDiffusion/comments/1q5kve2/what_free_ai_tool_is_there_that_can_help_me_swap/","YES"
+"同人内容创作者/动画爱好者","把参考视频中的角色替换成自己的角色","有角色的静态图；希望让角色出现在原视频的动作和场景中","复杂本地工作流：训练LoRA、裁剪片段、用Pinokip/Wan2.2/Wan2.1/FusioniX迁移人体动作、遮罩原角色、加载LoRA","https://www.reddit.com/r/StableDiffusion/comments/1s6dtcu/want_to_use_a_video_and_replace_a_character_with/","YES，也相当于reference video to video"
+"MacBook Pro M4 Max用户/AI视频尝试者","尝试文生视频、视频生视频、图生视频","工具太多选择困难；积分计费系统令人不安；担心本地开源模型的安装和学习成本","混合云方案：ChatGPT/Gemini写脚本、Runway/Kling/Vimerse出视频、CapCut/Descript剪辑；或本地ComfyUI+HunyuanVideo/Wan 2.1","https://www.reddit.com/r/generativeAI/comments/1r1e0by/best_tools_workflow_to_generate_ai_videos/","YES"
+"AI视频创作者/无脸内容生产者","用多个AI工具制作视频","工作流涉及ChatGPT写脚本、ElevenLabs配音、Midjourney出图、Artlist提供片段和音乐；四个订阅/登录/界面，大量复制粘贴下载上传","n8n自动化、VEED、Vosu AI、Luno等一站式平台","https://www.reddit.com/r/aitubers/comments/1pofmia/anyone_else_tired_of_juggling_a_bunch_of_ai_tools/","YES"
+"短视频/无脸内容创作者","制作无脸或短视频","工作流分散：一个工具写脚本、一个配音、图库/图片生成器出画面、CapCut剪辑；频繁切换工具很耗时","n8n/Make自动化、自建代码管线、每步人工审核","https://www.reddit.com/r/aitubers/comments/1uoijpz/would_an_allinone_ai_video_tool_actually_help_or/","YES"
+"使用库存/生成式AI视频工具的人","用Freepik和Artlist生成AI视频","全是网页工具很烦；每次想编辑都要下载、上传到剪辑软件、再导出","寻找桌面端方案：Wan 2GP、Higgsfield、Clapper","https://www.reddit.com/r/StableDiffusion/comments/1pkb3tf/any_good_desktop_ai_video_tools_getting_tired_of/","YES"
+"AI视频爱好者/AMD显卡用户","在LTX 2.3中用参考视频片段编辑/生成视频","会图生视频/文生视频，但不懂V2V工作流；尝试把image loader换成video loader后输出没有音频","editanything LoRA、bernini模型、在LTX 2.3 I2V GGUF工作流中把image loader换成video loader","https://github.com/Comfy-Org/ComfyUI/discussions/14329","YES，也相当于reference video to video"
+"宠物主人/普通AI视频创作者","制作自家猫做各种动作的短视频","希望用参考图片保持主体身份一致性；Google Veo只能把图片当作起始帧，不能作为持续参考","先出静态图再用图生视频；Wan Phantom+ComfyUI","https://www.reddit.com/r/StableDiffusion/comments/1lcarw8/best_ai_models_for_generating_video_from/","YES，也相当于reference image to video"
+"AI 短片创作者（HN 用户 echelon）","用 Sora 2 等模型制作 5-7 分钟 AI 短片","制作一条短片的完整 shot list 需要好几天的“拍摄”和剪辑，AI 短片制作仍然极其费力","逐镜头生成片段后手动剪辑拼接","https://news.ycombinator.com/item?id=45427982","YES"
+"流媒体公司 AI 解决方案工程师（HN 用户 paulluuk）","用 Veo 3 做视频方案，需要同一角色跨多个视频保持一致","Veo 3 没有跨 prompt 的一致性：不能上传角色参考图，上一个视频说“老神父弯腰”、下一个视频说“老神父捡硬币”，两个镜头里神父长得完全不同；用图生视频绕路效果也很差","先生成场景起始图再图生视频，但效果差","https://news.ycombinator.com/item?id=44258213","YES"
+"营销/广告团队负责人（HN 用户 cornel_io）","CEO 因不满广告创意团队出活速度，25 分钟用 AI 批量生成广告片","专家团队产能慢；AI 批量产出 20 条里只有 2 条能超过人工团队最佳广告，需要大量生成+实测筛选","CEO 自己用 AI 工具批量生成并投放测试","https://news.ycombinator.com/item?id=42368604","YES"
+"影视 pre-vis 从业者（HN 用户 jsheard）","用生成视频做前期预演（pre-vis）","生成的片段像通用素材库，不是导演想要的精确画面；pre-vis 不需要好看但需要精确，现有工具做不到","传统 pre-vis 流程","https://news.ycombinator.com/item?id=40358041","YES"
+"AI 短片创作者（HN 用户 fernly）","想验证模型能否做出有连续性的多镜头内容","用同一 prompt 做两个只有微小差别的片段，怀疑模型无法给出相同角色、相同服装、相同灯光和背景的“连贯性”，这是电影人所说的 continuity","手动检查对比，无法自动化","https://news.ycombinator.com/item?id=42432914","YES"
+"AI 叙事视频创作者（HN 用户 rtkwe）","把多个短场景串成有情节的视频","单个场景不错，但串起来就散架：警车内部大小形状在镜头间剧烈变化，动作戏节奏拖沓，“轮子掉下来”","分镜生成后大量人工修补","https://news.ycombinator.com/item?id=44044043","YES"
+"AI 广告制作公司（HN 用户 jsheard 引述）","用 AI 做可口可乐圣诞广告","需要从 7 万条生成视频中筛选出几十个镜头，且可乐卡车在镜头间始终无法保持一致，模型一直扭曲 logo，最后只能手动合成修补所有可乐标志","海量抽卡筛选 + 手动合成修 logo","https://news.ycombinator.com/item?id=46231187","YES"
+"电商卖家（HN 用户 umich2025）","为店铺 30 个产品做 UGC 产品视频和广告片","真人 UGC 创作者每条 $50-200 且无法控制最终镜头还要等回复；广告公司 30 秒 TVC 报价 $5k-10k；AI 方案 Sora 约 $10/30 分钟、API 成本约 $50，但目前 AI 质量还达不到","用 Google Veo（月账单 $130）+ 剪辑","https://news.ycombinator.com/item?id=47508246","YES"
+"AI 音乐视频创作者（HN 用户 nearbuy）","让 Claude/GPT 当“导演”自动做音乐视频","LLM 导演无法真正“看”视频内容，视频模型产出的片段有伪影、缺一致性、动作不跟音乐同步，且无法精确控制生成的片段","多模型生成 + 人工剪辑筛选","https://news.ycombinator.com/item?id=48939524","YES"
+"AI 影视从业者（HN 用户 veunes）","用 Sora/Veo/Runway 做导演需要的精确画面","当前模型是概率生成器，只会输出“似是而非”的画面而非导演需要的特定角度、灯光和角色一致性，缺“视频版 ControlNet”级别的潜空间控制","自建多工具管线","https://news.ycombinator.com/item?id=46498651","YES"
+"Seedance 2.5 关注者（HN 用户 JimsonYang）","在 Dreamina 上用 Seedance 2.5 生成 30 秒视频","Seedance 2.5 约 2 倍涨价：30 秒生成要 1440 积分（约 $15）","核算成本后决定用量","https://news.ycombinator.com/item?id=49138302","maybe"
+"迪士尼粉丝/二创作者（HN 用户 josefresco）","想用 Sora 生成迪士尼角色视频","不知道哪些角色被允许使用——“是有一个允许角色清单，还是只能转转盘听天由命？”","未知","https://news.ycombinator.com/item?id=46231493","maybe"
+"动画/图像创作者（HN 用户 SXX）","想让多实体/动画保持状态一致","AI 模型不擅长跟踪画面中多个实体的状态；想保持一致只能逐帧生成并为每帧写大量描述，做动画基本要生成上千张“垃圾”图再剪辑出能用的","逐帧生成 + 手动剪辑","https://news.ycombinator.com/item?id=45114379","YES"
+"AI 视频创作者（Reddit @deepthrowt_cop663）","用 Kling 1.6 图生视频做项目","上一个项目大约 10 次生成只有 1 条能用；1.6 现在几乎不遵循 prompt，怀疑官方故意推 2.0 让用户消耗更多积分","下个项目换其他视频生成器","https://www.reddit.com/r/KlingAI_Videos/comments/1kexg5h/","YES"
+"Kling 月付订阅用户（Reddit @SkyValleyDove）","用 Kling 月付订阅做视频","结果时好时坏，有时完全没有动作白扣积分；“情侣跳舞”这种简单 prompt 都做不好；最烦的是 App 总偷偷把迭代次数改成 4、把标准版切成专业版，感觉很阴险","寻找更可靠的应用","https://www.reddit.com/r/KLING/comments/1etp66r/","YES"
+"Runway/Kling 对比用户（Reddit @MorganJames）","同时用 Luma、Kling、Runway 做视频","Luma 和 Kling 都没有无限套餐且都是抽卡：可能要 roll 10 次才有能用的结果，而且失败的生成也要付费","购买多家订阅对冲","https://www.reddit.com/r/runwayml/comments/1f8p5o2/","YES"
+"Kling 用户（Reddit @anothermartz）","在 Kling 基础版/专业版之间做选择","总是觉得选错了：模糊了后悔没用专业版，用了专业版又觉得不该浪费——基础版和专业版积分差价大，试错成本高","凭感觉选模型版本","https://www.reddit.com/r/aivideo/comments/1fo09ic/","maybe"
+"Luma 用户（Reddit @Artforartsake99）","用 Luma 做视频","Luma 约 60% 的时候无视 prompt，经常只给一张静态图，非常令人沮丧","换 Kling","https://www.reddit.com/r/runwayml/comments/1eiu8o2/","maybe"
+"Runway 用户（Reddit @goldberry-fey）","用 Runway ML 做人物动画","很难控制结果：大多数时候它只是把脸放大而不做动画，而且 Runway 会把画面裁成固定尺寸","试用其他程序","https://www.reddit.com/r/aivideo/comments/1f7cg2h/","maybe"
+"AI 视频创作者（Reddit @FluffySupermarket998）","想做“隐形钢琴自动弹奏”这种简单镜头","所有视频生成站点都是“脱靶就完全脱靶”：连续失败 5 次都不沾边，自己明明很会写 prompt","换模型重试","https://www.reddit.com/r/KLING/comments/1k096tp/","YES"
+"Runway 用户（Reddit @ZookeepergameFar2652）","在 Runway 上做非成人内容项目","偶尔遇到与项目无关的审查屏蔽——在 Hailuo 或 Kling 能用的指令在 Runway 被拦","去中国平台生成","https://www.reddit.com/r/runwayml/comments/1hpdhxh/","maybe"
+"AI 视频初学者（Reddit @MeatStickMcFapperton）","学习 AI 视频 prompt","Runway 学习曲线陡、天花板高但更贵更慢更难用；需要先掌握艺术名词和电影摄影词汇才能写好 prompt","先用 Bing/Wombo 练习 prompt","https://www.reddit.com/r/midjourney/comments/1h9b9rw/","YES"
+"Sora 重度用户（Reddit @WanderingMind59）","用 Sora 做 20 分钟视频","Sora 连最简单的 prompt 都不遵循，还总是自作主张加场景切换，违背上传参考图的初衷；要做出想要的结果得几十次尝试，精疲力尽——一条 20 分钟视频花了两个半月","ChatGPT 出图和 prompt + Sora 反复生成","https://www.reddit.com/r/SoraAi/comments/1jxatb9/","YES"
+"Sora 用户（Reddit @Flat-Wing-8678）","用 Sora T2V 生成高质量视频","内容限制严重损害效率：动作僵硬、物理破碎、转场生硬，角色在帧间不可预测地变化；限制不只是过滤内容，而是主动劣化模型的生成能力","换其他模型","https://www.reddit.com/r/SoraAi/comments/1idukgp/","maybe"
+"音乐制作人（Reddit @portola_music）","用 Sora 为自己的新歌生成画面和 Spotify 视频","工具还只是噱头：需要的是“确切得到想要的东西”而不是随机输出，才能真正进入创作流程","用 Sora 随便生成一些宣传图","https://www.reddit.com/r/Songwriting/comments/1jt8y6s/","YES"
+"AI 艺术创作者（Reddit @Lastchildzh）","想无限制地大量生成视频","在 Luma/Kling/Runway 之间犹豫，最大障碍是没有 Midjourney 那样的无限订阅——希望有 $20-30/月随便做视频、或 $10/月 200 条/天的套餐，但没有厂商提供","继续观望","https://www.reddit.com/r/DefendingAIArt/comments/1kle9y9/","YES"
+"ComfyUI 视频用户（Reddit @bloke_pusher）","想在 ComfyUI 里做完美视频","步骤太多：Flux 出图保 prompt 遵循 → SDXL img2img 提质量 → 丢进 Wan/Framepack 等很久 → 才发现图不适合 I2V 又从头来；怀念改个 prompt 几秒出结果的日子","多节点串行管线","https://www.reddit.com/r/comfyui/comments/1kezlz0/","YES"
+"ComfyUI 用户（Reddit @Thin-Sun5910）","维护可用的 ComfyUI 视频环境","节点 nightly 更新经常毁掉工作流；对策是准备 3 个便携版（稳定版/季度更新版/最新版）并且停止频繁更新","多版本隔离 + 停止更新","https://www.reddit.com/r/comfyui/comments/1ko2g7e/","maybe"
+"本地视频生成用户（Reddit @Subject-User-1234）","在 4090 上用 Framepack 本地生成 5 秒视频","ComfyUI 节点 nightly 更新会毁工作流；付费生成不便宜且不一定好，积分用掉就没了；本地 4090 生成一条 5 秒视频要 5-6 分钟","本地 Framepack + 多版本 ComfyUI","https://www.reddit.com/r/buildapcsales/comments/1kfhn65/","maybe"
+"Stable Diffusion 视频用户（Reddit @martinerous）","想以整条街景为主体做运镜","起始帧+结束帧方案是鸡生蛋问题：没有结束帧就无法描述机位运动，而想要的机位角度又生成不出来；只靠首帧+文字描述时 Wan 很不可控，总加意外运动","首尾帧工作流凑合","https://www.reddit.com/r/StableDiffusion/comments/1kkhlto/","YES"
+"ComfyUI 用户（Reddit @Late_Advice_2890）","想对单张背景图做虚拟相机旋转出不同视角","不要动画不要视频，只要保持场景连贯的几个新角度静帧，现有工具都做不到","未知","https://www.reddit.com/r/comfyui/comments/1kf9lhl/","YES"
+"产品经理（Reddit @UpwardPM）","把竞品视频转成 Figma 流程图做分析","目前完全手动：录屏、截图、逻辑整理、在 Figma 里重绘，非常枯燥，一次要花好几个小时","手动截图+Figma 重绘","https://www.reddit.com/r/ProductManagement/comments/1kbmpih/","YES"
+"星战粉丝片创作者（Reddit @DezBailey）","用 AI 做星战 fan film","让图像、配音、动作（角色和运镜）正确且一致是极其枯燥耗时的工作，需要大量试错，这还只是原始片段，不含剪辑","大量试错+剪辑","https://www.reddit.com/r/StarWars/comments/1klknpz/","YES"
+"Kling 用户（Reddit @BlueLucidAI）","用 Kling 延长（extend）同一 clip 做长镜头","prompt 得当时大多数时候能保持灯光、运镜和节奏一致，但每多延长一次就更难；脸一旦离开画面再回来就会变成另一个人，试过所有办法都没成功","避免角色出画","https://www.reddit.com/r/KLING/comments/1k83tfk/","YES"
+"InVideo 用户（Reddit @NonstopYapper）","用 InVideo 做视频","拿到精确想要的输出非常难；写得宽泛些才接近预期，且之后还要用专业剪辑工具再改","宽泛 prompt + 专业剪辑软件","https://www.reddit.com/r/NewTubers/comments/1df2yo6/","maybe"
+"AI 视频工作室（Reddit @idefy1）","靠 AI 视频工具谋生","几乎试过所有工具（PixVerse/Pika/Kling/Luma/Hailuo/Wan/Vivago/Haiper/Domo 等），结论是 Runway 的运镜控制和 VFX 能力仍无对手，但学习成本高","付费用 Runway 为主","https://www.reddit.com/r/runwayml/comments/1jlzvxv/","maybe"
+"摄影师（Reddit @Junior-Variation-171）","帮客户把真实亲友做成故事角色","客户写了故事想让真人朋友家人出镜当角色，任务量巨大，AI 并不像魔法般简单；只有 Kling 和 Hailuo 可用于动画化","用 Kling/Hailuo 尽力做","https://www.reddit.com/r/ChatGPT/comments/1j9h4a6/","YES"
+"AI 音乐视频导演（Reddit @Endlesstavernstiktok）","一个人完成 nerdcore 音乐视频全流程","Claude/GPT/Deepseek 磨歌词 → Suno 生成音乐 → Midjourney 出图 → Hailuo/Runway/Kling 动画化，每条视频要 2-3 天","多工具流水线手工串联","https://www.reddit.com/r/aiwars/comments/1k95ub1/","YES"
+"AI 短片导演（Reddit @Next-Director7426）","用 V2V 做电影感短片","主要用 Kijai 的 HunyuanVideoWrapper 默认工作流，租 A100/H100 生成；为了演员一致性用 FaceFusion 给演员换 AI 脸","租云 GPU + FaceFusion 换脸","https://www.reddit.com/r/StableDiffusion/comments/1k19uki/","YES"
+"AI 配音一致性用户（Reddit @AI_Girlfriend4U）","为 AI 角色视频配一致的声音","声音没管理好：一开始用年轻美国女声，后来忘了之前用的哪个，变成英国老妇人——声音一致性无工具管理","记录 voice ID","https://www.reddit.com/r/HailuoAiOfficial/comments/1jjlljl/","maybe"
+"Adobe Firefly 用户（Reddit @Affectionate_One7928）","用 Firefly 生成视频并迭代 prompt","应该允许多次免费微调 prompt，满意后再下载/授权时才扣积分；现在积分定价是 Hailuo 的 10 倍以上","只用免费额度","https://www.reddit.com/r/Adobe/comments/1knkgk6/","maybe"
+"Vidu 用户（Reddit @Visual_Annual1436）","用单张图片保持角色一致","Vidu 的 reference character2video 可以只用一张图而不是每个场景一张图来保持角色一致，非常适合恐怖题材","用 Vidu 参考角色功能","https://www.reddit.com/r/aivideo/comments/1fqpxr9/","maybe"
+"Vidu 用户（Reddit @Serialbedshitter2322）","用 3 张参考图保持多角色一致","Vidu 可以把 3 张参考图都包含进最终视频并保持角色一致，有点革命性；问题是图像参考只有 3 次使用额度","省着用参考额度","https://www.reddit.com/r/SoraAi/comments/1gox3y9/","maybe"
+"AI 动漫粉丝（Reddit @Thepuppetmaster23）","用电影剧照做参考做阿丽塔 fan film","用 Vidu 放电影剧照做参考生成相似角色，没的角色用 Google AI Test Kitchen 生成，再手动修图贴近漫画——工作量很大","Vidu 参考图 + 手动修图","https://www.reddit.com/r/alitabattleangel/comments/1jq03r2/","YES"
+"AI 连续剧集创作者（Reddit @BarBitter3258）","做长达 1 分钟的连载视频","最难的是保持角色相貌（physiognomy）一致，什么都费时间","多工具（Pixverse/Hailuo/Spell AI）+ PowerDirector","https://www.reddit.com/r/StableDiffusion/comments/1kerh1y/","YES"
+"PixVerse 用户（Reddit @AITransformations）","给 AI 角色视频配口型","在 PixVerse 里输入台词做唇形同步全靠试错，本可以调好但草草了事","trial and error","https://www.reddit.com/r/aivideos/comments/1klsfbq/","maybe"
+"AI 短片导演（Reddit @Sourcecode12）","用 AI 工具做短片《The Colorless Man》","2 周业余时间、$600 预算完成（传统估 $300k-500k、70 人 2 个月），需要大量工具组合","多工具组合 + 大量人工","https://www.reddit.com/r/aivideo/comments/1kls6gv/","maybe"
+"独立 SaaS 创始人（Reddit @quiquegr12）","为 indie 开发者/小营销团队做社媒增长","自己搭建 XB Creative Studio：读产品页自动生成 hooks、脚本、UGC 风格 AI 视频并直接发到 TikTok/Instagram——“为修复自己破碎的工作流而建”","自建工具","https://www.reddit.com/r/SaaS/comments/1kgucmw/","YES"
+"AI UGC 行业观察者（Reddit @kirrttiraj）","评估 AI UGC 视频的商业可行性","10 条短片 $9 太便宜没意义；AI UGC 每个产品每天至少要发 4-5 条，只有批量发布才行，客户已经在这上面花了很多钱","批量生产+矩阵分发","https://www.reddit.com/r/SideProject/comments/1kifas2/","YES"
+"Veo 用户（Reddit @Economy-Criticism768）","想用 Veo 2 生成约 10 分钟素材","AI Studio 只给几条额度；改注册 Google Cloud 免费试用拿 $300 额度，在 Vertex AI 用约 $0.35/秒，约能生成 10 分钟；图生视频要单独申请，几天才批","GCP 试用额度 + Vertex AI","https://www.reddit.com/r/Bard/comments/1k7ov0g/","YES"
+"AI 视频剪辑师（Reddit @Beneficial_You_8667）","在 Sora 上微调动画动作","改一两个词系统就把整个动画换掉而不是微调，一个月预算就这样烧光；希望有“微调按钮”：基于小改动只收少量积分","整段重新生成（浪费积分）","https://www.reddit.com/r/runwayml/comments/1jqe3za/","YES"
+"AI 音乐人（Reddit @Soggy-Talk-7342）","同时做两个 AI 音乐视频","非常痛苦；同时用两个 AI 视频工具会让一致性更糟；Sora+Leonardo 组合靠 storyboard 功能延续上一段输入，但 480p 不超 10 秒、780p 不超 5 秒","Sora storyboard 续写","https://www.reddit.com/r/SunoAI/comments/1jfk9zy/","YES"
+"Runway 付费用户（Reddit @Fluffy-Explorer-2269）","做项目概念验证","在 Runway 花了约 $50，没有产出一条好视频，只会吃积分，甚至不能对生成结果点“不喜欢”，感觉被偷","放弃 Runway","https://www.reddit.com/r/runwayml/comments/1imrrph/","YES"
+"Pika 付费用户（Reddit @Lucaspittol）","等 Pika 生成一条视频","等 7 天才拿到一条可能根本处理不正确的视频；且未续订就被偷走 1000 多个已付费积分","对比后认为 Runway 更好","https://www.reddit.com/r/StableDiffusion/comments/1jywimj/","YES"
+"AI 视频系列创作者（Reddit @YaUzheUmer）","为 2 分钟以上的歌做系列视频","好的 flow 需要每 3-5 秒一个 clip，共需 20-40 条；Runway 一个月积分只生成出 1 条好的+1 条凑合的；单条可以，系列化不行","放弃系列化","https://www.reddit.com/r/SunoAI/comments/1klscuc/","YES"
+"AI 视频导演（Reddit @DivyanshMundra）","按电影流程做 AI 视频","选音乐→脑内分镜→Midjourney/Sora 出故事板→动画化（Runway/Kling/Sora）需要疯狂的 prompt 工程，是耗时最长的一步→Inshot 剪辑","多工具电影化流程","https://www.reddit.com/r/indiasocial/comments/1kln285/","maybe"
+"卡车司机转行音乐人（Reddit @MotherMushroom2908）","不会唱歌但想把脑中的歌做成视频","5 个工具串联：Google Labs 出图、Kling 做动作、Gemini 写运动 prompt、Suno 做音乐、ChatGPT 写整体概念","5 工具手工串联","https://www.reddit.com/r/aivideo/comments/1kg656f/","maybe"
+"AI 视频学习者（Reddit @SomewhereOld2103）","用 Midjourney+视频工具做片子","工作流是 midjourney + pika/luma/kling；prompt 靠 ChatGPT 帮忙——把视觉构想描述给它，由它润色出好 prompt（“AI 最懂 AI 的话”）","ChatGPT 润色 prompt","https://www.reddit.com/r/midjourney/comments/1kaybki/","maybe"
+"AI 影视制作公司（Reddit @dietpapita）","用 Imagen 3/Veo 2/Kling/Runway Gen4/ComfyUI 做项目","一致性主要靠高度详细的 prompt、并在不同镜头间重复相同段落来维持；靠叙事和创意意图让观众忽略不一致","重复 prompt 段落+人工补救","https://www.reddit.com/r/ArtificialInteligence/comments/1kbjxc7/","YES"
+"多工具用户（Reddit @ElementalChibiTv）","在多个 AI 平台上做视频","给每个平台写 prompt 都很痛苦：prompt 全是试错——让角色“吃东西”，吃什么、用什么吃，可能性无穷无尽","逐个平台试错","https://www.reddit.com/r/lumalabsai/comments/1kfsk00/","maybe"
+"Kling 用户（Reddit @SoBeachboy）","反复尝试让 Kling 生成“女人拿枪指镜头微笑”","多次“生成失败请换 prompt”后终于跑通，结果是静态图：没有指向、没有微笑，只有缓慢放大——浪费积分；希望 Kling 像 Midjourney 一样公布禁用词清单","重试+浪费积分","https://www.reddit.com/r/KlingAI_Videos/comments/1kkc7zs/","YES"
+"舞蹈视频创作者（Reddit @Big_Primary_1781）","用 Kling 复刻舞蹈编排","研究日语/阿拉伯语舞蹈视频，让 ChatGPT 总结动作并细化变缓，自己再编辑 prompt 复制到 Kling 并强调配饰细节","ChatGPT 总结动作+手工改 prompt","https://www.reddit.com/r/aiwars/comments/1k9zrsi/","YES"
+"AI 视频创作者（Reddit @AIinfluencer）","做 AI 改编视频","图片生成阶段老被拦，只能不断换 prompt 直到溜过去；生成后总要用 CapCut 大量剪辑才能成片","换词绕审+CapCut 剪辑","https://www.reddit.com/r/CursedAI/comments/1kpg2vb/","maybe"
+"Kling 2.0 付费用户（Reddit @Impressive_Cow_1267）","用新模型做图生视频","几周来换了各种图和 prompt 全部“处理失败”，且失败不退积分要自己追客服，“近乎诈骗”；1.6 没问题","追客服退款","https://www.reddit.com/r/KLING/comments/1k79kx6/","YES"
+"电商 UGC 创作者（Reddit @egoic）","用 Veo 为产品 packshot 做视频","Veo 导入产品和标签没问题，但每天额度太少、prompt 遵循不够，做不出想要的切换和摇镜；想把首帧场景搭建外包给 img2img 以获得更多控制","img2img 重摆产品图做首帧","https://www.reddit.com/r/GeminiAI/comments/1kff92d/","YES"
+"AI 二创作者（Reddit @Knowthrowaway87）","把《指环王》预告片复刻成吉卜力风格","花 $200 ChatGPT/Sora + $250 各平台视频积分 + 9 小时重剪：截图 102 个镜头→Sora Remix 成吉卜力风→Kling/Luma 动画化→按预告片节奏重剪","截图+Remix+多平台生成+重剪","https://www.reddit.com/r/neoliberal/comments/1j4uofk/","YES"
+"Runway 用户（Reddit @LastCall2021）","等 Runway 角色/物体一致性功能","Gen4 的 prompt 遵循比 Sora 好，但一致性功能上线前发挥不了全部潜力；目前用 Kling 1.6 的 Elements 功能凑合","用 Kling Elements 顶替","https://www.reddit.com/r/runwayml/comments/1jptsmq/","maybe"
+"AI 视频工具创始人（Reddit @Danihamdani777）","做 AI 视频 SaaS 需要用户试用转化","MVP 已跑通，但获客时必须先给免费额度（API 积分），烧钱极快——“像 Sora 发布前那样，让人试用才相信”，验证阶段资金是最大障碍","自掏腰包补贴免费额度","https://www.reddit.com/r/Entrepreneur/comments/1k3hr5o/","maybe"
+"Kling+MiniMax 用户（Reddit @WanderingMind59）","同时订阅多个 AI 视频工具","Kling 质量更好、更少伪影，但有些东西 Kling 反复试都做不对，换 MiniMax 就成了；现阶段最好多订阅几家对冲，各有所长","多平台订阅对冲","https://www.reddit.com/r/KLINGAIVideo/comments/1gsjwvo/","maybe"
+"ComfyUI 视频工作流用户（GitHub @envy-ai 等）","在 ComfyUI 里改 prompt 后重新运行","每次改 prompt 模型都重新加载，模型存在普通硬盘上时极其缓慢；新缓存系统会反复重载模型","加 --cache-classic 启动参数","https://github.com/Comfy-Org/ComfyUI/issues/14618","YES"
+"LTX-Video 用户（GitHub @krc1983）","想用 prompt schedule 节点控制视频随时间变化","折腾得满头大汗也做不出来；FizzNodes 的调度节点是为 SDXL/ControlNet 设计的，和新一代视频模型的工作方式完全不同，不可能生效","论坛求助","https://github.com/Lightricks/LTX-Video/issues/14","YES"
+"LTX-Video 用户（GitHub @jzhang38）","用官方 README 命令和 demo prompt 复现效果","即使照抄 demo prompt 也生成不出 demo 质量；高分辨率+257 帧会变模糊，官方确认帧数高会模糊","降分辨率和帧数","https://github.com/Lightricks/LTX-Video/issues/15","maybe"
+"LTX-Video 用户（GitHub @x4080）","想用 LTX 延长视频","把最后一段视频的尾帧拿去 img2vid：首帧不错但后面过饱和；换种子后视频开始“幻觉”；延长时亮度/对比度会变","换种子+手动调","https://github.com/Lightricks/LTX-Video/issues/32","YES"
+"Wan2.2 用户（GitHub issue 提问者）","用 Wan Animate 做人物动画","官方没有最佳实践：参考图尺寸、clip vision 尺寸、蒙版画法、prompt 怎么写都靠猜；ComfyUI 官方工作流人物一致性差点意思","自行摸索参数","https://github.com/Wan-Video/Wan2.2/issues/161","YES"
+"Wan2.2 5B 用户（GitHub issue 作者）","本地跑 Wan2.2 5B 模型","各种 prompt 都试了，畸形太多、速度极慢（宣传“720p 极快”不实）、VAE 吃光内存；14B 在 24GB 显存+32GB 内存上都跑不了，小模型不行就是大问题","等官方修复","https://github.com/Wan-Video/Wan2.2/issues/32","maybe"
+"Wan2.2 中文用户（GitHub issue 作者）","用 Wan2.2 14B 文生视频","负面 prompt 无法去除不想要的元素：“室外”会触发铁丝网、“半透明”会给前景加障碍物，怎么改都挡不住","不断精简 prompt 碰运气","https://github.com/Wan-Video/Wan2.2/issues/94","YES"
+"Open-Sora 用户（GitHub issue 作者）","用 t2v 示例生成视频","效果和想象差太多，怀疑自己设置有问题","论坛求助比对配置","https://github.com/hpcaitech/Open-Sora/issues/118","maybe"
+"CogVideoX 用户（GitHub issue 作者）","在 A100 上跑 CogVideoX1.5-5B T2V","生成一条视频要 6 小时，占 80GB 显存","等官方优化/换 diffusers 版","https://github.com/zai-org/CogVideo/issues/530","maybe"
+"CogVideo 社区用户（GitHub issue 汇总）","微调 CogVideo 做自定义视频","3D VAE 比扩散模型吃显存得多，严重限制微调 batch size；用户集中诉求：I2V 开源、VAE 微调、ComfyUI 适配","等官方排期","https://github.com/zai-org/CogVideo/issues/194","maybe"
+"lip-sync 开发者（GitHub Wav2Lip issue 作者）","用 Wav2Lip HD/Retalker 做唇形同步","又慢又吃 GPU，差点想放弃这项技术；RTX 3060 12GB 上一条 10-30 秒 1080p 要 1 分多钟；换人脸识别模型还要写不少代码","群里问其他人配置","https://github.com/Rudrabha/Wav2Lip/issues/584","YES"
+"diff2lip 用户（GitHub issue 作者）","用 diff2lip 做唇形同步","生成的牙齿很奇怪；推理吃满 48GB 内存但显卡完全不工作","调 checkpoint/参数","https://github.com/soumik-kanad/diff2lip/issues/6","maybe"
+"Veo 付费用户（GitHub issue 作者）","买 VEO 3 扩展做自动化生成","成功约 30 个 prompt 后所有请求都失败，报“生成过快/高需求”错误","等一段时间重试","https://github.com/trgkyle/veo-automation-user-guide/issues/6","maybe"
+"AI 视频管线运营者（GitHub market-fit-research）","运营自动化视频生产管线（营销/原型/内容）","每隔几个月模型换代：旧 prompt 作废、参考图逻辑、积分计费、导出设置全部要重学，没有“我要什么”和“哪个模型做”之间的标准抽象层，每次换模型都像从零开始","重建管线","https://github.com/nimius-debug/market-fit-research/issues/108","YES"
+"可灵付费会员（黑猫投诉用户）","充值黑金/铂金包年会员（2759 元）用可灵做视频","会员页宣传图片生成全年免费实际扣费；延长视频功能会把人物改掉；视频漏提示词、角色和建筑物一样大、对白串口；生成十几次都达不到效果；客服拖延不处理","12315 投诉要求退款","https://tousu.sina.cn/complaint/view/17396325289","YES"
+"小云雀 APP 用户（黑猫投诉用户）","用小云雀做中文银行宣传短视频","配音大量读音错乱、画面全是外国人物和英文环境；要求生成整条视频却给多个 15 秒片段且人物/背景/服装不一致；扣费规则不透明、失败不退积分","投诉要求退积分","https://tousu.sina.cn/complaint/view/17399774908","YES"
+"AI 视频玩家（搜狐号“有风”实测）","用可灵 O1 拍《疯狂动物城》番外","上传 4 张尼克图建主体库，第二遍生成时背景警员全变成“朱迪克隆体”；局部重绘要么还是兔脸要么把朱迪改没；多角色跳舞时两人融成“融合怪”或一个不动","换方案重生成","https://m.sohu.com/a/962501945_122572408/","YES"
+"教育机构课程负责人（HeyGem 案例）","为 10 位讲师制作标准化课程视频（每段 5 分钟、讲稿一致、仅出镜人不同）","传统流程拍摄+剪辑+对口型+导出，光协调时间表就 3 天、后期再 2 天，人力成本极高","用 HeyGem 数字人：一段音频驱动十个讲师形象自动生成","https://devpress.csdn.net/v1/article/detail/156558882","YES"
+"即梦 Seedance 创作者（什么值得买社区文）","用即梦做 AI 短视频","人物一致性差（参考图/锁种子也挡不住变脸换装）、纯抽卡模式匹配度低、排队久积分消耗快、连贯性差，陷入“试错-失败-重试”循环","用扣子工作流先生成标准化分镜图再导入视频生成","https://post.m.smzdm.com/p/axkwko5d/","YES"
+"AI 视频配音创作者（SegmentFault 社区）","做 AI 视频的配音和背景音乐","音画对不上是共性难题，嘴型对齐（Lip-Sync）是重灾区；侧脸或面部阴影会让嘴角边缘模糊","玉芬 AI 平台声音克隆+数字人口型同步 API","https://segmentfault.com/a/1190000048125883","YES"
+"TikTok 跨境二创团队（SegmentFault 社区）","搬运海外爆款视频做二创去重","原视频的外语硬编码字幕/贴纸难处理；既要保留爆款基因又要 100% 规避查重","SnapTik 无水印下载→麦斯创意复刻→GhostCut 擦字幕+翻译加字幕","https://segmentfault.com/a/1190000047987290","YES"
+"角色视频管线开发者（dev.to 作者 gurayta）","搭建角色视频生产线","做到第二部分撞墙：视频生成环节无法保证角色发音的确定性（唇形/语音一致性）","自研管线逐段解决","https://dev.to/gurayta/sesi-modelden-geri-almak-karakter-videolarinda-telaffuzu-deterministik-yapmak-bolum-3-45of","maybe"
+"Faceless 频道自动化需求（Product Hunt 上的 PassiveShorts）","希望选个主题、声音和排期，就自动写稿、配音、加字幕并发布到 YouTube/TikTok","手动做 faceless 频道全流程耗时，现有工具不自动发布","PassiveShorts 等新工具（市场已出现）","https://www.producthunt.com/products/passiveshorts","YES"
+"AI 视频工具开发者（r/KlingAI_Videos 用户）","开发并上线了 video-to-prompt 工具：上传视频返回可复刻相似视频的 prompt","社区对“视频反推 prompt 复刻”有真实需求，作者直接做了产品并发布","自建工具","https://www.reddit.com/r/KlingAI_Videos/comments/1k66dg7/","YES"
+"Kling 用户（r/KlingAI_Videos）","生成时不想让角色嘴巴动","Kling 总是自作主张加嘴部动作，不知道怎么关","社区求助","https://www.reddit.com/r/KlingAI_Videos/comments/1ko2bax/","maybe"
+"ChatGPT Pro 付费用户（OpenAI 社区用户 @zeshanwaris 等）","付 $200 买 Pro 套餐就为了用 Sora 视频生成","付款后才发现“新账号视频生成暂时禁用”，购买前没有任何提示；同帖 123 人跟帖同病，多人感觉被“钓鱼”（gotcha）","发帖维权、等待官方开放","https://community.openai.com/t/1174221","YES"
+"AI 视频 SaaS 开发者（OpenAI 社区用户 @admin215、@vmstb）","用 Sora 2 API 全 webhook 模式做视频生成产品","部分被审核拦截的请求完全收不到 webhook 回调，无法通知用户视频因审核失败——用户以为是开发者的系统坏了","论坛跟帖催官方修复（后确认有 PR 修复）","https://community.openai.com/t/1361690","YES"
+"Kling iOS 付费用户（App Store 评论用户）","用 Kling App 做 AI 视频，需要替换配音并做口型同步","App 自带的“去掉生成音频+上传 1 分钟音频做 lip sync”入口埋得极深，只误打误撞进过一次；另一个版本只给 5 秒，功能可发现性极差","反复摸索菜单","https://apps.apple.com/us/app/kling-ai-ai-image-video-maker/id6738049229","maybe"
+"AI Video App 免费用户（App Store 评论用户）","想在视频里做两人跳舞的画面","试了好几次都无法生成两人同框跳舞，选项不够用","放弃该功能","https://apps.apple.com/us/app/ai-video-ai-video-generator/id6478868302","maybe"
+"VideoGPT 年付用户（App Store 评论用户）","付了 Pro 和年费用 VideoGPT 做视频","prompt 要求视频，App 却只生成一张图片；反复尝试两天都是如此，申请全额退款","App Store 申请退款","https://apps.apple.com/us/app/videogpt-ai-video-generator/id6451396274","maybe"
+"播客主（Reddit r/podcasting @SoMuchCrimeSoLittleT）","给纯音频播客做短视频片段发社媒","需要 Canva 加画面再导入 CapCut 加字幕，“真希望不用两个工具”——试过很多工具，字幕环节没有比 CapCut 更好的","Canva+CapCut 双工具手工流程","https://www.reddit.com/r/podcasting/comments/1jct409/","YES"
+"房产经纪人（Reddit r/realtors 引述的影视剪辑师 @666POD）","为房源制作看房视频","专业航拍+稳定器 4K 看房视频要 2-3 天拍摄剪辑，至少 $1500/条，严重侵蚀经纪人利润，非豪宅房源根本做不起","用手机粗剪视频凑合","https://www.reddit.com/r/realtors/comments/1kp4p9p/","YES"
+"网文推文/漫剧创作者（SegmentFault 社区）","把网络小说做成 AI 漫剧视频引流","制作链路极繁琐：ChatGPT 写分镜→Midjourney 画图→Luma/可灵转视频→剪映配音，跨平台耗时；800 字剧本折腾一天也难成片，废片率极高，且角色跨镜头“脸崩”","多工具拼凑流水线","https://segmentfault.com/a/1190000048159236","YES"
+"数字人直播带货副业者（什么值得买社区文引述）","用 AI 数字人做直播带货副业","三大坑：几千元的“陪跑课程/独家工具”机构存活率不到 6 个月（315 已点名）；2026 年 Q1 未标注 AI 身份的违规直播间占 67%，处罚为限流 7 天直至永久封号；仿冒名人形象直播带货已被行政拘留","去腾讯智影/硅基智能等平台用免费额度跑流程，只克隆本人形象","https://post.m.smzdm.com/p/a26od2qn/","YES"
+"无代码背景的音乐人/独立开发者（Faceless.video 创始人 Jacob Seeger）","用 Bubble 无代码打造全自动 faceless 视频频道平台","找开发代理做 SaaS MVP 报价 3 万美元、无力承担；此前 2.5 年做的 6 个应用全部失败；音乐人营销服务受行业付款约束、无法同时服务多客户","自学 Bubble，第 7 个产品约 $250 基建+$250 推特推广冷启动（现已 $83K/月、$1M ARR）","https://www.indiehackers.com/post/3FvQoHUh2SglJvAJGkSF","YES"
+"AI 视频创作者（HN 用户 Nina1000）","用 Runway 等文生视频工具做内容","Runway 经常在产出能用的东西之前就耗尽全部积分，即使严格遵守官方指南","换用 Hailuo AI，或等 Sora Turbo","https://news.ycombinator.com/item?id=42368604","YES"
+"创作者（HN 用户 kurthr）","想复刻一条喜欢的视频的风格和内容","没有直接的参考视频复刻功能，只能把目标视频丢给 o1 让它写描述性 prompt，再把 prompt 喂给 Sora，靠人工和 AI 批评反复迭代，且不知道要花多少钱","o1 反推 prompt → Sora 生成 → 人工迭代","https://news.ycombinator.com/item?id=42368604","YES"
+"AI 视频导演（HN 用户 troupo）","想把电影脚本交给自动化导演/摄影/剪辑","必须为灯光、道具、服装、机位与运动、走位、剪辑、音乐、音效等每一项提供正确详细的指令，否则出不来想要的东西","手动编写超详细分镜指令","https://news.ycombinator.com/item?id=42368604","YES"
+"内容营销创作者（HN 用户 neom）","为加拿大日做 3 分钟内容营销视频","单一工具做不完，需要组合多个工具：Midjourney 出图 + Pika 动起来 + Suno 配乐，耗时 40 分钟","多工具手工串联（midjourney+pika+suno）","https://news.ycombinator.com/item?id=42368604","YES"
+"AI 图像/视频创作者（HN 用户 yeknoda）","想把脑中画面复刻出来","达到目标所需的 prompt 数量和迭代量非常大，且常常做不出最初想要的东西；用 ground truth 视频测试“从零复刻要多少 prompt 和编辑”，在有限时间和迭代次数下基本不可能","大量 prompt 迭代","https://news.ycombinator.com/item?id=42368604","YES"
+"AI 影像创作者（HN 用户 chromanoid）","希望边说边改地编辑 AI 画面，像跟一个隐形画师/摄影组对话","目前只能写文本 prompt，来回改效率低；已开始用 ChatGPT 语音对话来调整画面","用 ChatGPT 语音对话调整图片","https://news.ycombinator.com/item?id=40358041","YES"
+"Veo 2 预览用户（HN 用户 simonw）","测试 Veo 2 的 prompt 遵循度","同一条“鹈鹕骑车”prompt 生成 4 个视频，只有 2 个真的是鹈鹕骑车，一个是鹈鹕跑步、一个是停在不动的自行车上，prompt 遵循像抽卡","多次生成挑选","https://news.ycombinator.com/item?id=42432914","maybe"
+"Sora 付费用户（HN 用户 mikhmha）","付费试用 Sora 一个月做视频","多种 prompt 方式都试过，输出始终平庸；生成耗时长，且约 50% 概率因内容违规失败，像“庄家每次都亏钱的赌场”","放弃 Sora","https://news.ycombinator.com/item?id=47508246","YES"
+"AI 视频评测者（HN 用户 dfxm12）","评估 AI 音乐视频的连贯性","反复出现的角色在镜头间漂移，没有一条视频能从头到尾保持连贯叙事；Veo 3 连 8 秒的连贯故事线都保不住","多次重 roll","https://news.ycombinator.com/item?id=48939524","YES"
+"AI 视频创作者（HN 用户 userbinator）","想做心里非常具体的画面","模糊需求第一次就出“slop”；具体需求要几十次生成才接近，且之后还要在图像编辑器里手动修；$15/30 秒约合 $1800/小时，按 1/10 成功率单条可用镜头约 $180","大量生成 + 手动后期","https://news.ycombinator.com/item?id=49138302","YES"
+"AI 视频工作流研究者（HN 用户 dagaci）","用 H3（MiniMax）API 直接生成视频","好结果其实来自 ComfyUI 工作流 + 本地 prompt 扩写模型；直接用原始 prompt 效果差，用 ChatGPT “改进”prompt 后效果才好","本地模型扩写 prompt + ComfyUI","https://news.ycombinator.com/item?id=49138302","YES"
+"AI 视频工作流搭建者（HN 用户 echelon）","需要跨镜头的场景/位置一致性","场景一致性工具（如 ArtCraft、ComfyUI 插件）正在出现但都还不成熟","用不成熟的开源工具凑合","https://news.ycombinator.com/item?id=45427982","YES"
+"Adobe 用户（Reddit @Hazrd_Design）","希望 Adobe AI 视频对坏结果退积分","还没见过对坏结果退积分的生成式视频工具；Runway/Pika 提供免费预览或最终渲染才扣积分的模式值得 Adobe 借鉴","用预览制工具","https://www.reddit.com/r/Adobe/comments/1knkgk6/","maybe"
+"AI 视频工具对比用户（Reddit @FluffySupermarket998）","需要多服装/背景+流畅运镜的角色一致性","Sora 贵且功能有限；Runway 精确控制多但不好用；Hailuo 免费试 1000 积分只有不到 1/3 能用；最后靠 Kling 的主体参考+4 图参考功能","Kling 参考功能","https://www.reddit.com/r/KLING/comments/1k096tp/","YES"
+"Wan2.2 用户（GitHub @zwukong 等）","用 Wan Animate 面部捕捉","Kijai 工作流的面部捕捉有问题，会造成人物一致性问题","等官方修复","https://github.com/Wan-Video/Wan2.2/issues/161","YES"
+"LTX-2 图生视频用户（GitHub @mkamranr）","用一张 AI 生成的人物图作为条件，只希望视频改变动作","图生视频没有保住人物身份，脸、发型、衣服和整体外观都变了，结果像另一个人","尝试不同 image conditioning strength 和 prompt，但仍然无法稳定；在 issue 里询问是否需要 LoRA、IC-LoRA 或推荐设置","https://github.com/Lightricks/LTX-2/issues/255","YES，高价值：角色身份锁定、参考图强度建议、失败检测和重试策略都能产品化"
+"AI 短片创作者","想用单张角色图批量生成多个镜头","参考图只提供视觉条件而非身份保持，用户不知道该把它当首帧、风格参考还是身份参考","靠试参数和看输出猜测模型行为","https://github.com/Lightricks/LTX-2/issues/255","YES，高价值：可以做“参考资产类型标注+模型路由”，明确角色、服装、场景、动作分别由什么输入控制"
+"AI 角色视频管线用户","希望复用同一个角色，在不同场景只改变动作","目前缺少可视化的一致性评分，生成后才发现脸、发型、服装漂移","人工肉眼检查每次生成","https://github.com/Lightricks/LTX-2/issues/255","YES，高价值：自动比对参考图与输出帧，给 identity/wardrobe drift 分数并建议重生成"
+"Wan2.2 文生视频用户（GitHub @woshilikewang）","做有人物说话的文生视频","希望导入语音直接驱动画面人物同步口型，而不是先生成画面再二次 lip-sync","提出功能请求，希望语音信息在视频生成过程中深度融合","https://github.com/Wan-Video/Wan2.2/issues/225","YES，高价值：音频驱动视频生成、口型同步、语音节奏到表情动作映射都是明确产品方向"
+"中文 AI 数字人/口播创作者","用文本生成讲解类视频，同时希望角色自然开口说话","后置口型匹配容易割裂，表情、嘴型和语音节奏不一致","先生成视频再单独跑 lip-sync 工具","https://github.com/Wan-Video/Wan2.2/issues/225","YES，高价值：一体化“脚本+声音+口型+表情”生成比单纯文生视频更接近可交付内容"
+"LTXV 多角色对话用户（GitHub @jovan2009）","让一张双人图片根据预录音频生成对话视频","两个角色会随机对口型，有时两个人同时说同一段话，无法控制 A 说第一句、B 回答第二句","在 prompt 里写角色名和台词，但模型仍无法稳定分配说话人","https://github.com/Lightricks/ComfyUI-LTXVideo/issues/395","YES，高价值：多角色 speaker-turn 控制、角色区域遮罩、分轨音频驱动都可形成刚需功能"
+"非英语音频的 AI 对话视频创作者","用自己录制的非英语音频做 image+audio to video","模型不知道哪段音频属于哪个角色，非英语场景下更难靠 prompt 控制","尝试把角色写成 Character A / Character B，并询问是否能让音频影响画面左右区域","https://github.com/Lightricks/ComfyUI-LTXVideo/issues/395","YES，高价值：多语言对话分段、音轨到人物绑定、时间轴口型控制非常适合工具化"
+"Wan2.2 I2V 连续镜头用户（GitHub @leonero-h）","用一批起始图连续生成多个镜头，希望镜头之间连续一致","First/Last frame 方法还会有明显断裂，temporal blend 也不总是有效","尝试 latent 拼接、mask layer、空 latent、native 10+10 workflows 等复杂方案","https://github.com/Wan-Video/Wan2.2/issues/142","YES，高价值：跨镜头 latent/首尾帧桥接、转场一致性检测、自动补帧是清晰产品机会"
+"AI 分镜视频创作者","把多个 10 秒片段合成连续故事","每个片段单看能用，但串起来运动、光线、人物状态不连续","手动混合上一段尾帧和下一段首帧，反复生成测试","https://github.com/Wan-Video/Wan2.2/issues/142","YES，高价值：可以做镜头间连续性助手，自动生成过渡帧、检查状态漂移并给出修复 prompt"
+"LTX Desktop 视频编辑用户（GitHub @zk3699）","在 Video Editor 的素材面板上传 JPG/PNG 参考图","选择图片后界面没有任何反应，不出现素材也没有错误提示；视频上传却正常","用户自己调试到缩略图/尺寸探测异常，建议失败时仍保留原图并显示警告","https://github.com/Lightricks/LTX-Desktop/issues/118","YES，高价值：素材导入必须可恢复、可解释，尤其参考图是 AI video 工作流核心入口"
+"本地 AI 视频工具用户","下载 20GB 级别模型后在桌面工具里生成视频","模型下载中断后，应用只看到目录存在就误判下载完成，生成时直接失败","手动删除模型目录和 .downloading 目录再重新下载","https://github.com/Lightricks/LTX-Desktop/issues/118","YES，高价值：模型完整性校验、修复按钮、断点续传能显著降低本地视频工具流失"
+"LTX Desktop Retake 用户","对已导入的视频片段做局部重生成/Retake","720x1280 这类常见竖屏尺寸因宽高不是 32 的倍数直接 generation failed","手动用 ffmpeg 预处理到 704 或 736 等合法尺寸","https://github.com/Lightricks/LTX-Desktop/issues/118","YES，高价值：自动吸附到模型合法尺寸、保留构图、提示裁剪风险，是视频工具基本能力"
+"需要大模型本地部署的创作者","下载 Z-Image-Turbo 等大模型做视频/图像生成","网络断一下或电脑睡眠，下载进度从 90% 清零重来","保持应用一直开着，失败后完整重下","https://github.com/Lightricks/LTX-Desktop/issues/118","YES，高价值：断点续传、失败重试、下载健康检查能直接提升安装转化率"
+"角色设计和场景创作者","生成角色或场景参考图","只能上传单张参考图，不能同时给脸、姿势、服装、背景、灯光参考","把多个参考拼图或手动写进 prompt，控制力差","https://github.com/Lightricks/LTX-Desktop/issues/118","YES，高价值：多参考图上传、每张图加标签、参考权重控制，是 AI video 前期刚需"
+"AI 短片制作人","制作有多个角色和固定场景的叙事视频","视频工作流参考输入太有限，无法同时绑定角色外观、场景 mood board 和上一段视频运动","每个镜头单独试，失败后手工重做","https://github.com/Lightricks/LTX-Desktop/issues/118","YES，高价值：多参考视频/图像混合、参考类型标签、镜头资产库非常可产品化"
+"品牌视频/吉祥物视频团队","让同一个人物或 mascot 出现在多条广告镜头中","没有 identity vector/角色锁，脸和身体会漂移，品牌识别受损","反复生成，人工挑最像的片段","https://github.com/Lightricks/LTX-Desktop/issues/118","YES，高价值：角色库、身份锁、品牌资产锁定，是广告视频SaaS的核心差异点"
+"多人物对话动画创作者","用脚本生成两人或多人对话镜头","希望 prompt 里用 [Alice] 这类标签后，系统能保证正确人物站在正确位置并说正确台词","靠自然语言描述和后期剪辑补救","https://github.com/Lightricks/LTX-Desktop/issues/118","YES，高价值：脚本解析、角色标签、说话人检测、动作分配都是明确工作流需求"
+"ComfyUI 本地视频生成用户（GitHub @intervisionlord）","修改 prompt 后重复运行 QwenImageEdit/Wan 类工作流","每改一次 prompt 都从硬盘重读模型权重，SSD 狂读、内存增加，原本几秒变成几分钟","只能忍受、回滚版本或手动重启环境","https://github.com/Comfy-Org/ComfyUI/issues/14907","YES，高价值：模型缓存、热加载、节点级性能诊断能降低本地视频生成迭代成本"
+"高频 prompt 迭代创作者","在同一视频工作流里小改 prompt 做多次测试","简单文字改动触发完整模型重载，打断创作节奏","等待或频繁重启","https://github.com/Comfy-Org/ComfyUI/issues/14907","YES，高价值：可以做“视频 prompt 沙盒”，热缓存模型并把小改动快速预览"
+"ROCm/Strix Halo 本地视频生成用户（GitHub @EvilSquirrels）","在同一 ComfyUI 进程中连续排队 WanVideoWrapper I2V 任务","第一条约 38 分钟，第二条同样任务变成约 87 分钟，只有重启或调用 /free free_memory 才恢复","手动 POST /free 或重启进程","https://github.com/Comfy-Org/ComfyUI/issues/14475","YES，高价值：队列调度、自动释放显存/统一内存、性能回归检测可明显改善本地生成体验"
+"本地 AI 视频队列运营者","连续跑多个 I2V 任务并希望吞吐稳定","缓存分配器复用导致第二次任务性能大幅下降，界面上很难看出原因","人工观察日志和显存状态","https://github.com/Comfy-Org/ComfyUI/issues/14475","YES，高价值：可以做队列健康度监控，发现异常自动释放、重启 worker 或切换后端"
+"ComfyUI GGUF 视频工作流用户","用 Wan 2.2 low-noise / GGUF / CLIP 编码生成图像或视频条件","异步 offload 后 CLIP 似乎跑到 CPU，GPU 利用率为 0，几分钟变成几十分钟","尝试禁用 async offload、MultiGPU loader 或回滚版本","https://github.com/Comfy-Org/ComfyUI/issues/11081","YES，高价值：节点设备放置可视化、自动推荐 highvram/lowvram/offload 配置，能服务本地创作者"
+"AI 视频 SaaS 开发者（OpenAI 社区多名用户）","用 Sora 2 API 的 webhook 模式给用户生成视频","审核在早期拦截时没有 webhook 回调，开发者无法通知用户失败原因，用户以为产品坏了","额外轮询 /v1/videos 或等官方修复","https://community.openai.com/t/sora-2-api-no-webhook-received-for-moderation-blocked-video-requests/1361690","YES，高价值：视频 API 编排层需要统一回调、失败分类、用户通知和补偿逻辑"
+"视频生成平台开发者","把多个视频模型接入自己的 SaaS","任务可能卡在 99% 很久才报错，用户看不到真实状态","轮询状态并人工解释","https://community.openai.com/t/sora-2-api-no-webhook-received-for-moderation-blocked-video-requests/1361690","YES，高价值：统一进度状态、超时判断、可解释失败提示是视频生成产品基础设施需求"
+"LiteLLM 视频模型代理用户（GitHub @justicel）","把 runwayml/seedance2 和 seedance2_5 放到统一代理后面","只有 image-to-video 能跑，text-to-video 和 video-to-video 因端点硬编码无法触达","提出按输入类型选择 Runway endpoint 的修复方案","https://github.com/BerriAI/litellm/issues/36483","YES，高价值：多模型视频 API 网关要能统一 T2V/I2V/V2V 路由，这是开发者刚需"
+"使用视频模型代理的开发者","创建视频任务后查询生成进度","Runway 返回 0..1 小数进度，但代理类型写成整数，生成中轮询一直 500","只能等任务完成后再查，或改代理源码","https://github.com/BerriAI/litellm/issues/36483","YES，高价值：统一不同供应商 progress/状态/错误结构，可做视频 API reliability layer"
+"AI 视频平台财务/运营开发者","给不同视频模型设置自定义价格并记录成本","视频成本总被记录为 $0.00，当前 Runway 模型缺失价格映射，4K 等分辨率成本会严重低估","手动注册模型成本或自己补日志","https://github.com/BerriAI/litellm/issues/36483","YES，高价值：视频成本核算、按秒/分辨率/输入视频计费，是做 AI video SaaS 盈亏控制的关键"
+"LTX-Video 图生视频用户（GitHub @zhouzhenneng）","用 inference.py 从图片生成 768x512x121 的视频","命令没有明确报错，输出文件也保存了，但 mp4 播放不了","在 issue 中贴命令和日志排查","https://github.com/Lightricks/LTX-Video/issues/55","YES，高价值：生成后自动验证可播放、自动转码修复、失败不扣费，是交付型视频工具必须做的质检"
+"视频生成 CLI/API 用户","设置分辨率、帧数、负面 prompt 并运行本地推理","参数组合超过模型舒适范围时只有日志 warning，最终产物损坏或不可用","看命令行日志后手动改参数","https://github.com/Lightricks/LTX-Video/issues/55","YES，高价值：渲染前参数体检、自动降级分辨率/帧数、产物 playable check 可直接提升成功率"
+"Wan Animate 用户（GitHub @zwukong 等）","用 Wan Animate 做面部捕捉和人物动画","面部捕捉问题导致人物一致性差，参考图尺寸、clip vision 尺寸、蒙版和 prompt 最佳实践不清楚","在 GitHub issue 里询问官方工作流和设置","https://github.com/Wan-Video/Wan2.2/issues/161","YES，高价值：模型参数向导、参考图/蒙版检查器、模板化工作流能显著降低上手成本"
+"Wan2.2 5B 本地用户","尝试用小模型在本地生成 720p 视频","畸形多、速度慢、VAE 吃光内存；大模型在 24GB 显存+32GB 内存上也跑不了","继续试 prompt 和模型版本","https://github.com/Wan-Video/Wan2.2/issues/32","YES，高价值：按硬件自动推荐模型、分辨率、帧数和云端/本地路由，是视频生成平台可卖点"
+"Wan2.2 中文提示词用户","通过负面 prompt 去掉不想要的画面元素","室外会莫名出现铁丝网，半透明会出现前景障碍物，负面 prompt 无法阻止 unwanted objects","反复改 prompt 仍挡不住","https://github.com/Wan-Video/Wan2.2/issues/94","YES，高价值：生成前的负面约束检查、生成后的物体检测+局部重绘，是可执行需求"
+"LTX-Video 工作流用户","尝试把图像/视频调度节点用于新一代视频模型","原来为 SDXL/ControlNet 设计的节点逻辑不适配视频模型，用户花大量时间仍跑不通","在 issue 中询问节点是否理论上能生效","https://github.com/Lightricks/LTX-Video/issues/14","YES，高价值：模型版本识别、节点兼容性检查、自动迁移工作流是本地视频生态刚需"
+"LTX-Video 质量复现用户","照抄 demo prompt 生成高分辨率长帧数视频","生成不出 demo 质量，257 帧和高分辨率会变模糊","在 issue 里确认帧数高会导致模糊","https://github.com/Lightricks/LTX-Video/issues/15","YES，高价值：按目标质量自动建议时长/帧数/分辨率，降低用户对 demo 的落差"
+"LTX-Video 延长视频用户","把上一段视频尾帧拿去 img2vid 继续延长","首帧不错但后面过饱和、换种子后开始幻觉，延长时亮度和对比度漂移","反复换种子和参数","https://github.com/Lightricks/LTX-Video/issues/32","YES，高价值：延长视频的色彩/亮度锁定、风格连续性检测、种子管理值得做成工具"
+"Wav2Lip 开发者/使用者","在 RTX 3060 12GB 上给 10-30 秒 1080p 视频做 lip-sync","处理慢且吃 GPU；换人脸识别模型还要改代码，差点放弃这条技术路线","修改代码和模型配置","https://github.com/Rudrabha/Wav2Lip/issues/584","YES，高价值：云端 lip-sync、自动选择 face detector、速度/质量模式，是可付费能力"
+"diff2lip 用户","尝试用扩散式 lip-sync 生成说话视频","牙齿生成异常，推理吃满 48GB 内存但显卡不工作","在 issue 中排查运行环境和推理路径","https://github.com/soumik-kanad/diff2lip/issues/6","YES，高价值：口型质量检测、牙齿/嘴部 artifact 修复、GPU 路由检测是视频后处理需求"
+"CogVideoX 本地用户","本地运行视频生成","生成一条视频要 6 小时并占用约 80GB 显存，普通创作者无法承受","等待优化或寻求低显存方案","https://github.com/zai-org/CogVideo/issues/530","YES，高价值：云渲染、低显存预设、成本/耗时预估可以直接解决采用障碍"
+"CogVideo 社区用户","希望做 I2V、VAE 微调和 ComfyUI 适配","3D VAE 比扩散模型更吃显存，限制微调 batch size；社区集中要求 I2V 开源和 ComfyUI 适配","等待官方或社区补齐","https://github.com/zai-org/CogVideo/issues/194","YES，高价值：托管式 I2V 微调、ComfyUI 兼容工作流、显存优化服务有明确需求"
+"Open-Sora 试用者","用开源视频模型生成示例视频","效果和想象差太多，用户不知道是模型能力问题还是参数设置问题","在 issue 中询问是否设置有误","https://github.com/hpcaitech/Open-Sora/issues/118","YES，高价值：新手诊断器、参数模板、输出质量解释器能把开源模型门槛产品化"
+"Veo 自动化用户","通过自动化流程调用 Veo 生成视频","成功几十个 prompt 后所有请求因“生成过快/高需求”失败，生产流程不可预测","等待恢复或换模型","https://github.com/trgkyle/veo-automation-user-guide/issues/6","YES，高价值：多供应商限流治理、排队策略、失败后自动切换模型，是视频 SaaS 基建需求"
+"Runway/Seedance 代理开发者","把视频生成、查询、计费都统一到一个 API","供应商 schema 对 text/image/video 输入要求不同，错误常被转成 500，调用方难以判断是否可重试","人工阅读每个供应商文档并写适配层","https://github.com/BerriAI/litellm/issues/36483","YES，高价值：视频模型统一适配器和错误分类，是开发者愿意付费的基础服务"
+"AI 视频产品负责人","估算一次生成任务的真实成本","只按请求 duration 算成本会漏掉供应商实际产出时长和分辨率差异，4K 账单容易失控","手工对账供应商后台","https://github.com/BerriAI/litellm/issues/36483","YES，高价值：每条视频生成的真实成本归因、预算上限和用户级额度控制非常关键"
+"本地视频生成工具维护者","处理用户在图生视频中得到无法播放 mp4 的反馈","生成进程完成并写出文件，但用户打开才发现不可播放，问题发生得太晚","手动复现命令，重新编码或调整参数","https://github.com/Lightricks/LTX-Video/issues/55","YES，高价值：渲染完成后的自动播放性检查和重编码 fallback 可以减少退款/差评"
+"叙事 AI 视频创作者","给角色建立多角度参考素材并跨镜头复用","缺少一个地方管理 front/side/profile/full body、服装、场景和上一镜头视频","文件夹手动管理，prompt 里重复描述","https://github.com/Lightricks/LTX-Desktop/issues/118","YES，高价值：角色/场景资产库可以作为 AI video 创作台的中心功能"
+"视频广告创作者","把产品图和场景图合成为短广告镜头","单参考图无法同时约束产品外观、手部姿势、背景和灯光，导致品牌信息漂移","多轮生成后手工选最接近的结果","https://github.com/Lightricks/LTX-Desktop/issues/118","YES，高价值：产品/姿势/场景/风格多参考混合，是电商视频生成非常直接的付费点"
+"短剧/漫剧创作者","在同一场戏里让两个角色轮流说话","角色身份、台词归属和口型节奏同时需要控制，单句 prompt 很难表达","分镜头生成再剪辑，必要时单独做口型","https://github.com/Lightricks/ComfyUI-LTXVideo/issues/395","YES，高价值：剧本到时间轴、角色到音轨、镜头到口型的结构化编辑器很有价值"
+"多镜头产品演示视频团队","把同一产品放到多个镜头里展示","产品 logo、颜色、比例、边缘在镜头间容易变化，无法直接用于品牌广告","挑帧、修图、局部重绘、再生成","https://wavemaker.io/blog/consistent-characters-across-scenes/","YES，高价值：产品一致性锁定和 logo 保护对商业广告比泛视频生成更刚需"
+"长视频 YouTube AI 创作者","做包含多个镜头的长内容","观众会明显看出角色在第 7 个镜头像另一个人；宽景、侧脸和远景尤其容易漂移","固定参考图，漂移镜头单独重跑","https://framesail.com/blog/ai-character-consistency","YES，高价值：长视频级角色一致性检查和重生成工作台是高频痛点"
+"AI 视频制作团队","用 reference image 和 identity block 做多镜头测试","只靠文字描述的一致性显著不稳定，切到不同角度或远景后容易变脸","用同一参考图和固定身份块重复生成","https://www.pixmind.io/posts/ai-video-character-consistency-guide","YES，高价值：自动生成身份块、绑定参考图、限制每次只改 shot delta，可以成为创作工具核心"
+"AI 视频导演/剪辑团队","评估哪种方法最能保证同一角色跨 clips 一致","文档和教程互相矛盾，不同模型的 reference、extend、first/last frame 能力差异很大","自己查每个模型限制并做试验","https://prompt-architects.com/blog/227-keeping-a-character-consistent-across-video-clips","YES，高价值：跨模型一致性策略推荐器，可以按场景选择长镜头、参考图、延长或首尾帧方案"
+"Seedance 多镜头测试者","做 12 个八秒镜头连续性测试","不仅人物会漂，衣服、配饰、道具在哪只手、雨水状态都会在镜头间变掉","人工检查每个切点的属性","https://www.artarch.ai/blog/ai-video-character-consistency-clothing-props-state","YES，高价值：continuity checklist 自动化、服装/道具/状态追踪，比泛 prompt 优化更接近生产需求"
+"Veo/Seedance/Runway 多模型用户","为每个镜头选择不同视频模型","不知道什么时候该用长镜头、什么时候该用参考图、什么时候该接上一段视频做延长","看教程并凭经验试错","https://prompt-architects.com/blog/227-keeping-a-character-consistent-across-video-clips","YES，高价值：根据镜头类型自动推荐模型和控制策略，能减少大量无效生成"
+"视频模型 API 接入者","把 Seedance、Runway、Hailuo、Gemini video 模型统一给业务方调用","每个模型的输入字段、时长、分辨率、计费规则不同，调用错误和成本误差都很容易发生","自己维护 provider adapter","https://github.com/BerriAI/litellm/issues/36483","YES，高价值：video model gateway、统一 schema、成本和失败兜底，是开发者市场需求"
+"本地 ComfyUI 视频工作流用户","在同一会话里反复测试不同 prompt 和参数","不知道哪个节点正在吃 CPU/GPU/显存，慢了也无法判断是模型、VAE、CLIP 还是 offload 配置","看终端日志和任务管理器","https://github.com/Comfy-Org/ComfyUI/issues/11081","YES，高价值：节点级性能火焰图和自动优化建议可以服务重度本地创作者"
+"使用视频生成 API 的 SaaS 创业者","给终端用户提供视频生成服务","模型因审核、限流、失败、超时产生的状态不统一，直接影响用户信任和客服压力","自己写轮询、补偿和解释逻辑","https://community.openai.com/t/sora-2-api-no-webhook-received-for-moderation-blocked-video-requests/1361690","YES，高价值：视频生成任务的状态机、失败补偿、用户通知，可独立卖给 AI 应用开发者"
+"AI 视频工具评测/采购者","比较 Sora、Runway、Kling 等模型在质量、控制、速度和成本上的真实差异","广告价格和实际可用镜头成本不是一回事，失败重 roll 后真实成本大幅升高","自己做多 prompt 测试并记录结果","https://diyai.io/ai-tools/video-generation/runway-vs-kling-vs-luma-vs-sora/","YES，高价值：按可用镜头成本比较模型、自动记录 accept rate，可以指导模型路由和定价"
+"电商商品视频生成用户","用一张商品图生成竖屏广告","弱 prompt 会导致商品形状、标签、颜色、位置变形，生成物不能直接投放","在 prompt 中手工写 subject to preserve、motion、camera、negative constraints","https://github.com/yasuomang/ai-video-prompt-cookbook","YES，高价值：商品主体保护、品牌字样保护、广告构图模板，是电商 AI video 的强需求"
+"Runway API 使用者","调用不同模式生成视频并记录任务计划","失败码、重试策略、素材上传有效期、成本和执行计划都需要业务层自己处理","用 SDK/CLI 手工封装计划和重试","https://github.com/tryAGI/Runway","YES，高价值：面向非工程团队的可视化任务计划、自动重试、素材有效期管理，有直接实用价值"
+"Runway 多模式集成开发者","让业务用户在 text-to-video、image-to-video、video-to-video 间切换","如果代理层没有正确区分 input 类型，用户明明发 prompt 却被当成 image-to-video 导致失败","自己维护复杂 if/else 和错误提示","https://github.com/BerriAI/litellm/issues/36483","YES，高价值：输入自动识别、模式推荐、错误前置校验能减少很多失败任务"
+"视频生成成本敏感团队","给用户开放长视频或高分辨率生成","不同供应商按秒、分辨率、输入视频长度收费，单条任务可能超预算","人工设置额度并事后对账","https://github.com/BerriAI/litellm/issues/36483","YES，高价值：生成前成本预估、预算锁、失败退款和模型降级策略都能成为产品功能"
+"AI 视频创作台用户","上传多种素材后生成分镜视频","素材没有被命名和绑定，prompt 里的“这张图/那个角色”容易指代混乱","在文件名里写角色和用途，手工复制到 prompt","https://github.com/Lightricks/LTX-Desktop/issues/118","YES，高价值：素材标签、角色绑定、prompt 中自动引用素材编号，能减少模型误用参考图"
+"多角色品牌短片创作者","让固定主角、配角和场景跨多个广告版本复用","每个角色需要独立 identity lock，否则两个角色会互相污染或合并","拆成单角色镜头再剪辑","https://github.com/Lightricks/LTX-Desktop/issues/118","YES，高价值：多角色独立身份锁和镜头级绑定是从玩具到生产工具的关键"
+"AI 视频模板产品开发者","把用户脚本自动拆成可生成的短镜头","每个模型有时长、输入数量、参考资源上限，脚本不能直接一键生成","人工拆分镜头并查模型限制","https://github.com/MiniMax-AI/cli/blob/main/skill/h3-video/references/h3-video.md","YES，高价值：脚本到镜头计划、资源上限检查、模型兼容拆分，是 AI video workflow 的核心模块"
+"MiniMax H3/Seedance 工作流用户","用参考图、参考视频、参考音频组合生成视频","参考资源数量、时长、对齐时间点、角色引用写法复杂，容易配置错","手写对齐说明和资源编号","https://github.com/landon2022/minimax-h3-prompt-writer/blob/main/references/h3-prompt-spec.md","YES，高价值：参考资源时间轴编辑器和自动 prompt 编译器有很强实用性"
+"AI 视频提示词工程用户","为 Seedance/Kling/Veo 写多镜头 prompt","抽象词、矛盾指令、多运动描述会导致画面发散，人工检查很耗时","套用 checklist 手动改 prompt","https://github.com/smixs/visual-skills/blob/main/video/references/universal-rules.md","YES，高价值：prompt lint、矛盾检测、镜头动作约束检查，可作为生成前质检工具"
