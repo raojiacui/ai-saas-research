@@ -1,0 +1,8 @@
+.claude/
+.omc/
+.playwright-mcp/
+
+__pycache__/
+*.py[cod]
+
+*.tmp.csv
